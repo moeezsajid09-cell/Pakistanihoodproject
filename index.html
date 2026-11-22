@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#033a1c" />
+<title>Pakistani Hood | Pakistan Zindabad</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23055a2b'/%3E%3Crect x='1.5' y='1.5' width='61' height='61' rx='13' fill='none' stroke='%23d4aa2c' stroke-width='2'/%3E%3Cpath d='M42 6A26 26 0 1 0 58 44 22 22 0 0 1 42 6z' fill='%23fff'/%3E%3Cpolygon points='45,18 47.12,24.09 53.56,24.22 48.42,28.11 50.29,34.28 45,30.6 39.71,34.28 41.58,28.11 36.44,24.22 42.88,24.09' fill='%23fff'/%3E%3C/svg%3E">
+<meta name="description" content="Pakistani Hood - Pakistan Official Roblox Game. Something biggest, a major update, is coming soon. Private Rooms, Rep System, Rep Leaderboard, Trolling Tools aur Events." />
+
+<script>document.documentElement.className+=' js';</script>
+<noscript><style>#loader{display:none!important}body.loading .hero-content{opacity:1!important}</style></noscript>
+
+<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Cinzel:wght@600;800&family=Creepster&family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Montserrat",sans-serif;scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}
+
+:root{
+  --green:#055a2b;
+  --green2:#0b8a43;
+  --deep:#033a1c;
+  --deep2:#022a14;
+  --gold:#c9a227;
+  --gold2:#e8c964;
+  --gold-dark:#9a7712;
+  --white:#ffffff;
+  --cream:#fbf8ee;
+  --mint:#f1f8f3;
+  --ink:#10281a;
+  --muted:#4d6556;
+  --line:rgba(201,162,39,.45);
+  --soft:rgba(5,90,43,.12);
+  --shadow:0 14px 40px rgba(5,58,28,.12);
+  --goldline:linear-gradient(90deg,transparent,#c9a227,#f3da82,#c9a227,transparent);
+}
+
+html{overflow-x:hidden}
+body{background:#fff;color:var(--ink);overflow-x:hidden;min-height:100vh}
+body::selection{background:var(--gold);color:#022a14}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#eef4ef}
+::-webkit-scrollbar-thumb{background:linear-gradient(var(--gold),var(--green));border-radius:10px}
+
+svg.ico{width:1em;height:1em;fill:currentColor;display:inline-block;vertical-align:middle}
+.stripe{height:5px;width:100%;background:linear-gradient(90deg,var(--green),var(--gold),#f3da82,var(--gold),var(--green))}
+
+#progress{position:fixed;top:0;left:0;height:4px;width:0;z-index:1001;background:linear-gradient(90deg,var(--green2),var(--gold),#f3da82);box-shadow:0 0 12px rgba(201,162,39,.8)}
+
+/* =========================================================
+   LOADING SCREEN  (Halloween liquid ki tarah tapak kar utarta hai,
+   neeche se gold liquid aur phir Pakistani theme aati hai)
+   ========================================================= */
+#loader{display:none;position:fixed;inset:0;z-index:100000;background:#022a14;transition:opacity .8s ease,visibility .8s}
+.js #loader{display:block}
+#loader.done{opacity:0;visibility:hidden;pointer-events:none}
+#ldSvg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.js body.loading{overflow:hidden}
+.ld-skip{position:absolute;right:18px;bottom:18px;z-index:2;background:rgba(0,0,0,.35);color:#fff;border:1px solid rgba(255,255,255,.4);border-radius:30px;padding:9px 18px;font-size:12px;font-weight:800;letter-spacing:2px;cursor:pointer;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:.3s}
+.ld-skip:hover{background:var(--gold);color:#022a14;border-color:var(--gold)}
+
+/* loader scene animations */
+.ld-flap{transform-box:fill-box;transform-origin:50% 60%;animation:ldFlap .35s ease-in-out infinite alternate}
+.ld-float{animation:ldFloat 3s ease-in-out infinite}
+.ld-flick{animation:ldFlick 1.6s ease-in-out infinite}
+.ld-twinkle{animation:ldTw 2s ease-in-out infinite}
+.ld-dot{animation:ldDot 1.2s infinite}
+.ld-dot:nth-child(2){animation-delay:.2s}
+.ld-dot:nth-child(3){animation-delay:.4s}
+.ld-moon{transform-box:fill-box;transform-origin:center;animation:ldMoon 4s ease-in-out infinite}
+@keyframes ldFlap{from{transform:scaleY(1)}to{transform:scaleY(.45)}}
+@keyframes ldFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+@keyframes ldFlick{0%,100%{opacity:1}45%{opacity:.82}55%{opacity:1}70%{opacity:.9}}
+@keyframes ldTw{0%,100%{opacity:.25}50%{opacity:1}}
+@keyframes ldDot{0%,100%{opacity:.2}50%{opacity:1}}
+@keyframes ldMoon{0%,100%{transform:scale(1) rotate(-3deg)}50%{transform:scale(1.05) rotate(3deg)}}
+
+/* HEADER */
+header{
+  position:fixed;top:16px;left:50%;transform:translateX(-50%);width:94%;max-width:1400px;height:74px;z-index:999;
+  display:flex;align-items:center;justify-content:space-between;padding:0 30px;border-radius:50px;
+  background:rgba(255,255,255,.9);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  border:1px solid var(--line);box-shadow:0 12px 38px rgba(2,42,20,.22);
+}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo-mark{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,var(--green2),var(--deep));border:2px solid var(--gold);box-shadow:0 0 16px rgba(201,162,39,.5);font-weight:900;font-size:18px;color:#fff}
+.logo-text{line-height:1.05;font-weight:900;font-size:17px;color:var(--deep);letter-spacing:1px}
+.logo-text small{display:block;color:var(--gold-dark);font-size:13px;letter-spacing:3px}
+nav{display:flex;gap:24px}
+nav a{text-decoration:none;color:var(--deep);font-weight:700;font-size:14px;position:relative;transition:.3s;white-space:nowrap}
+nav a::after{content:"";position:absolute;left:50%;bottom:-8px;transform:translateX(-50%);width:0;height:3px;border-radius:10px;background:linear-gradient(90deg,var(--gold),var(--green2));transition:.3s}
+nav a:hover{color:var(--green2)}
+nav a:hover::after{width:100%}
+.play-top{text-decoration:none;padding:13px 26px;border-radius:35px;color:#fff;font-weight:900;background:linear-gradient(135deg,var(--green2),var(--deep));border:1px solid var(--gold);box-shadow:0 6px 22px rgba(5,90,43,.45);transition:.3s;font-size:14px;white-space:nowrap;display:inline-flex;align-items:center;gap:8px}
+.play-top:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 10px 30px rgba(201,162,39,.55)}
+.menu-btn{display:none;background:none;border:none;color:var(--deep);font-size:28px;cursor:pointer;line-height:1}
+.menu-btn svg{width:1em;height:1em}
+
+/* HERO */
+#home{
+  min-height:100vh;min-height:100svh;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:150px 20px 150px;overflow:hidden;isolation:isolate;color:#fff;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cpath d='M45 5l9 21 21-9-9 21 21 9-21 9 9 21-21-9-9 21-9-21-21 9 9-21-21-9 21-9-9-21 21 9z' fill='none' stroke='%23e8c964' stroke-opacity='.10' stroke-width='1.2'/%3E%3C/svg%3E"),
+    radial-gradient(circle at 50% 28%,rgba(11,138,67,.65),transparent 52%),
+    linear-gradient(180deg,#022a14,#055a2b 60%,#033a1c);
+}
+.rays{position:absolute;left:50%;top:30%;width:1500px;height:1500px;margin:-750px 0 0 -750px;z-index:-2;opacity:.55;
+  background:repeating-conic-gradient(from 0deg,rgba(232,201,100,.14) 0 6deg,transparent 6deg 14deg);
+  -webkit-mask-image:radial-gradient(circle,#000,transparent 62%);mask-image:radial-gradient(circle,#000,transparent 62%);
+  animation:spin 160s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.emblem{position:absolute;top:104px;right:7%;width:150px;height:150px;z-index:1;color:#fff;
+  filter:drop-shadow(0 0 16px rgba(255,255,255,.55)) drop-shadow(0 0 44px rgba(232,201,100,.7));animation:moonGlow 6s ease-in-out infinite}
+.emblem svg{width:100%;height:100%;fill:currentColor}
+@keyframes moonGlow{0%,100%{transform:scale(1) rotate(-4deg)}50%{transform:scale(1.06) rotate(4deg)}}
+#sparkles{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.sp{position:absolute;bottom:-20px;width:4px;height:4px;border-radius:50%;background:var(--gold2);box-shadow:0 0 10px 2px rgba(232,201,100,.8);opacity:0;animation:spUp linear infinite}
+@keyframes spUp{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}100%{transform:translate(var(--sx),-110vh);opacity:0}}
+.wave{position:absolute;left:0;bottom:-1px;width:100%;height:90px;z-index:3;display:block}
+
+.hero-content{position:relative;z-index:5;max-width:1000px;width:100%;transition:opacity .9s ease .1s,transform .9s ease .1s}
+.js body.loading .hero-content{opacity:0;transform:translateY(30px)}
+.hero-tag{display:inline-block;padding:9px 22px;border-radius:30px;font-size:13px;font-weight:800;letter-spacing:3px;background:rgba(255,255,255,.1);border:1px solid var(--gold2);color:var(--gold2);margin-bottom:20px}
+.hero-content h1{
+  font-family:"Rozha One",serif;font-size:clamp(46px,9vw,92px);line-height:.95;font-weight:400;letter-spacing:3px;color:#fff;
+  filter:drop-shadow(0 4px 0 rgba(2,42,20,.8)) drop-shadow(0 0 22px rgba(11,138,67,.7));
+}
+.hero-content h1 span{background:linear-gradient(180deg,#fff2b8,var(--gold) 70%,#a07c14);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tagline{margin-top:14px;font-family:"Cinzel",serif;font-size:clamp(12px,2.4vw,18px);font-weight:800;letter-spacing:clamp(3px,1vw,6px);color:#e9f6ee}
+
+/* COMING SOON BANNER */
+.soon{position:relative;margin:34px auto 0;max-width:900px;padding:42px 24px 38px;border-radius:34px;overflow:hidden;
+  background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));
+  border:1px solid var(--gold2);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  box-shadow:0 0 0 6px rgba(232,201,100,.08),0 24px 70px rgba(0,0,0,.4),0 0 60px rgba(232,201,100,.18)}
+.soon::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-20deg);animation:sweep 4.5s ease-in-out infinite}
+@keyframes sweep{0%{left:-60%}60%,100%{left:140%}}
+.soon .kicker{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:900;letter-spacing:6px;color:var(--gold2)}
+.soon .kicker::before,.soon .kicker::after{content:"";width:34px;height:2px;background:linear-gradient(90deg,transparent,var(--gold2))}
+.soon .kicker::after{transform:scaleX(-1)}
+.soon .big{margin:14px 0 6px;font-family:"Rozha One",serif;font-weight:400;font-size:clamp(42px,10.5vw,104px);line-height:1;letter-spacing:2px;
+  background:linear-gradient(100deg,#fff2b8 0%,#d4aa2c 30%,#fff 50%,#d4aa2c 70%,#fff2b8 100%);background-size:250% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;animation:shimmer 5s linear infinite;
+  filter:drop-shadow(0 4px 0 rgba(2,42,20,.75)) drop-shadow(0 0 26px rgba(232,201,100,.5))}
+@keyframes shimmer{0%{background-position:0% 50%}100%{background-position:250% 50%}}
+.soon .sub{font-family:"Cinzel",serif;font-weight:800;font-size:clamp(16px,3.6vw,32px);letter-spacing:clamp(2px,.8vw,6px);color:#fff;text-transform:uppercase}
+.soon .sub b{color:var(--gold2)}
+.soon .dots{margin-top:20px;display:inline-flex;gap:10px}
+.soon .dots i{width:11px;height:11px;border-radius:50%;background:var(--gold2);box-shadow:0 0 12px rgba(232,201,100,.9);animation:dotp 1.4s ease-in-out infinite}
+.soon .dots i:nth-child(2){animation-delay:.2s}
+.soon .dots i:nth-child(3){animation-delay:.4s}
+@keyframes dotp{0%,100%{transform:scale(.6);opacity:.4}50%{transform:scale(1.15);opacity:1}}
+.soon p{margin:18px auto 0;max-width:620px;font-size:clamp(14px,2.2vw,16px);line-height:1.7;color:#e6f3ea}
+
+.desc{margin:26px auto 30px;max-width:740px;font-size:clamp(15px,2.2vw,17px);line-height:1.7;color:#dcefe3}
+.hero-buttons{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+
+.btn{text-decoration:none;min-width:220px;padding:17px 28px;border-radius:40px;font-weight:900;color:#fff;border:1px solid transparent;transition:.3s;position:relative;overflow:hidden;display:inline-block;font-size:14px;letter-spacing:.5px;cursor:pointer;text-align:center}
+.btn svg.ico{width:1.2em;height:1.2em;fill:currentColor;margin-right:9px;vertical-align:-.22em}
+.btn::before{content:"";position:absolute;top:0;left:-100%;width:100%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.45),transparent);transition:.5s}
+.btn:hover::before{left:100%}
+.btn:hover{transform:translateY(-6px) scale(1.03)}
+.btn-green{background:linear-gradient(135deg,var(--green2),var(--deep));border-color:var(--gold);box-shadow:0 10px 28px rgba(5,90,43,.45)}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));border-color:#fff3c0;color:#1d1500;box-shadow:0 10px 28px rgba(201,162,39,.5)}
+.btn-ghost{background:rgba(255,255,255,.08);border-color:#fff;color:#fff}
+
+.socials{position:absolute;left:34px;top:50%;transform:translateY(-50%);z-index:6;display:flex;flex-direction:column;gap:14px}
+.socials a{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;text-decoration:none;color:#fff;background:rgba(255,255,255,.1);border:1px solid var(--gold2);transition:.3s}
+.socials a svg{width:22px;height:22px;fill:currentColor}
+.socials a:hover{transform:translateX(8px) scale(1.1);background:var(--gold2);color:#022a14}
+
+/* SECTIONS */
+section:not(#home){padding:100px 7%;position:relative;z-index:1}
+#about{background:#fff}
+#rooms{background:var(--mint)}
+#updates{background:#fff}
+#events{background:linear-gradient(180deg,var(--mint),#fff 130%);overflow:hidden}
+#team{background:var(--cream)}
+#influencers{background:radial-gradient(circle at 50% 0%,rgba(11,138,67,.6),transparent 55%),linear-gradient(180deg,#033a1c,#022a14);color:#fff;overflow:hidden;isolation:isolate}
+#rules{background:var(--mint)}
+
+.section-head{text-align:center;margin-bottom:50px}
+.mini{font-weight:900;letter-spacing:5px;margin-bottom:14px;font-size:14px;color:var(--gold-dark);display:inline-flex;align-items:center;gap:14px}
+.mini::before,.mini::after{content:"";width:40px;height:2px;background:linear-gradient(90deg,transparent,var(--gold))}
+.mini::after{transform:scaleX(-1)}
+.section-head h2{font-family:"Rozha One",serif;font-weight:400;font-size:clamp(36px,7vw,58px);letter-spacing:2px;line-height:1.1;color:var(--deep)}
+.section-head h2::after{content:"";display:block;width:90px;height:4px;border-radius:4px;margin:16px auto 0;background:linear-gradient(90deg,var(--green2),var(--gold))}
+.section-head p{margin:18px auto 0;max-width:720px;line-height:1.8;color:var(--muted)}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+.card{background:#fff;border-radius:26px;padding:32px;border:1px solid #e1ece4;border-top:4px solid var(--gold);box-shadow:var(--shadow);transition:.4s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:rgba(11,138,67,.07);top:-60px;right:-60px}
+.card:hover{transform:translateY(-12px);box-shadow:0 24px 54px rgba(5,58,28,.2);border-color:var(--gold)}
+.icon{width:60px;height:60px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,var(--green2),var(--deep));border:2px solid var(--gold);box-shadow:0 8px 20px rgba(5,90,43,.35);margin-bottom:20px;position:relative}
+.icon svg{width:26px;height:26px;fill:#fff}
+.card h3{color:var(--deep);margin-bottom:12px;font-size:20px}
+.card p{color:var(--muted);line-height:1.7;font-size:15px}
+
+/* PRIVATE ROOMS */
+.rooms-box{max-width:1100px;margin:auto;text-align:center;padding:56px 34px;border-radius:40px;position:relative;overflow:hidden;color:#fff;
+  background:linear-gradient(145deg,#022a14,#055a2b 70%,#033a1c);border:1px solid var(--gold);box-shadow:0 0 0 6px rgba(201,162,39,.12),0 30px 70px rgba(2,42,20,.4)}
+.rooms-box::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;top:-200px;right:-120px;background:radial-gradient(circle,rgba(232,201,100,.28),transparent 65%)}
+.badge{display:inline-block;padding:8px 20px;border-radius:30px;font-weight:900;font-size:12px;letter-spacing:3px;color:#1d1500;background:linear-gradient(135deg,var(--gold2),var(--gold));margin-bottom:20px;animation:pulseGold 2.2s infinite}
+.rooms-box h3{font-family:"Rozha One",serif;font-weight:400;font-size:clamp(30px,6vw,48px);letter-spacing:1px;color:#fff;margin-bottom:12px;position:relative}
+.rooms-box > p{color:#d4eadb;line-height:1.8;max-width:700px;margin:0 auto 34px;position:relative}
+.rooms-box .cards{margin-bottom:36px;text-align:left;position:relative}
+.rooms-box .card{background:rgba(255,255,255,.07);border:1px solid rgba(232,201,100,.4);border-top:4px solid var(--gold2);box-shadow:none}
+.rooms-box .card h3{color:var(--gold2);font-family:"Montserrat",sans-serif;font-size:20px;letter-spacing:0}
+.rooms-box .card p{color:#d4eadb}
+.rooms-box .card::before{background:rgba(232,201,100,.1)}
+.rooms-box .card:hover{border-color:var(--gold2);box-shadow:0 20px 50px rgba(0,0,0,.4)}
+.rooms-box .hero-buttons{position:relative}
+
+/* UPDATES */
+.update-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:26px;max-width:1200px;margin:auto}
+.update{display:flex;flex-direction:column;align-items:flex-start;padding:30px 28px;border-radius:30px;overflow:hidden;position:relative;background:#fff;border:1px solid #e1ece4;box-shadow:var(--shadow);transition:.4s}
+.update::before{content:"";position:absolute;width:190px;height:190px;border-radius:50%;top:-80px;right:-70px;background:rgba(11,138,67,.08);pointer-events:none}
+.update:nth-child(even)::before{background:rgba(201,162,39,.14)}
+.update:hover{transform:translateY(-8px);box-shadow:0 26px 60px rgba(5,58,28,.2);border-color:var(--gold)}
+.u-top{display:flex;justify-content:space-between;align-items:flex-start;width:100%;margin-bottom:24px;position:relative;z-index:2}
+.u-num{padding:7px 15px;border-radius:25px;font-weight:900;font-size:13px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1d1500}
+.u-new{display:inline-block;padding:6px 15px;border-radius:25px;font-size:11px;font-weight:900;letter-spacing:2px;background:var(--mint);border:1px solid var(--green2);color:var(--green);margin-bottom:14px}
+.u-ico{width:76px;height:76px;border-radius:24px;display:grid;place-items:center;background:linear-gradient(145deg,var(--green2),var(--deep));border:2px solid var(--gold);box-shadow:0 14px 30px rgba(5,90,43,.35),inset 0 2px 0 rgba(255,255,255,.35);transform:perspective(320px) rotateY(-14deg) rotateX(6deg);transition:.45s cubic-bezier(.2,.8,.2,1);animation:icoFloat 4.5s ease-in-out infinite}
+.u-ico svg{width:40px;height:40px;fill:#fff;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))}
+.update:nth-child(even) .u-ico{background:linear-gradient(145deg,var(--gold2),var(--gold-dark));border-color:#fff3c0}
+.update:hover .u-ico{transform:perspective(320px) rotateY(0) rotateX(0) scale(1.1) translateY(-4px)}
+.u-body{width:100%;position:relative;z-index:2}
+.u-body h3{font-size:clamp(24px,4vw,30px);font-weight:900;line-height:1.2;margin-bottom:16px;color:var(--deep)}
+.u-body h3 span{color:var(--green2)}
+.u-body p{color:var(--muted);line-height:1.8;font-size:16px;margin-bottom:18px}
+.u-body li{color:var(--ink);font-weight:600;font-size:15px;display:flex;gap:10px;align-items:flex-start}
+.u-body ul{list-style:none;display:grid;gap:10px}
+.u-body li svg{width:16px;height:16px;fill:var(--green2);flex:none;margin-top:3px}
+.more-box{grid-column:1/-1;text-align:center;padding:46px 30px;border-radius:36px;color:#fff;background:linear-gradient(145deg,#022a14,#055a2b);border:2px dashed var(--gold)}
+.more-box > svg{width:42px;height:42px;fill:var(--gold2);margin-bottom:14px;filter:drop-shadow(0 0 12px rgba(232,201,100,.7))}
+.more-box h3{font-family:"Rozha One",serif;font-weight:400;font-size:clamp(30px,6vw,40px);letter-spacing:1px;color:#fff;margin-bottom:10px}
+.more-box p{color:#d4eadb;line-height:1.8;max-width:620px;margin:0 auto 22px}
+
+/* RULES */
+.rule-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:24px;max-width:1200px;margin:0 auto 46px}
+.rule-card{position:relative;overflow:hidden;background:#fff;border:1px solid #dfeae2;border-radius:28px;padding:30px 28px 26px 34px;box-shadow:var(--shadow);transition:.4s}
+.rule-card::before{content:"";position:absolute;left:0;top:0;width:7px;height:100%;background:linear-gradient(180deg,var(--green2),var(--gold));transition:.45s}
+.rule-card:hover{transform:translateY(-8px);box-shadow:0 26px 56px rgba(5,58,28,.2);border-color:var(--gold)}
+.rule-card:hover::before{width:100%;opacity:.07}
+.rule-num{position:absolute;right:18px;top:4px;font-family:"Rozha One",serif;font-size:90px;line-height:1;color:rgba(201,162,39,.22);pointer-events:none;transition:.4s}
+.rule-card:hover .rule-num{color:rgba(201,162,39,.4);transform:scale(1.08)}
+.rule-ico{position:relative;width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(145deg,var(--green2),var(--deep));border:2px solid var(--gold);box-shadow:0 10px 24px rgba(5,90,43,.35),inset 0 2px 0 rgba(255,255,255,.3)}
+.rule-ico svg{width:28px;height:28px;fill:#fff}
+.rule-card h3{position:relative;font-size:19px;font-weight:900;color:var(--deep);margin:20px 0 10px;line-height:1.3}
+.rule-card p{position:relative;color:var(--muted);line-height:1.7;font-size:15px}
+.rule-tag{position:relative;display:inline-block;margin-top:18px;padding:6px 14px;border-radius:20px;font-size:11px;font-weight:900;letter-spacing:2px}
+.tag-strict{background:linear-gradient(135deg,var(--green2),var(--deep));color:#fff}
+.tag-must{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1d1500}
+.tag-fair{background:var(--mint);color:var(--green);border:1px solid #bcd9c5}
+
+.penalty{max-width:1000px;margin:0 auto;padding:38px 26px;border-radius:32px;text-align:center;color:#fff;position:relative;overflow:hidden;
+  background:linear-gradient(145deg,#022a14,#055a2b 75%,#033a1c);border:1px solid var(--gold);box-shadow:0 0 0 6px rgba(201,162,39,.12),0 26px 60px rgba(2,42,20,.35)}
+.penalty::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;top:-170px;right:-90px;background:radial-gradient(circle,rgba(232,201,100,.25),transparent 65%)}
+.penalty h3{position:relative;font-family:"Rozha One",serif;font-weight:400;font-size:clamp(24px,4.6vw,36px);letter-spacing:1px;margin-bottom:8px}
+.penalty > p{position:relative;color:#d4eadb;line-height:1.7;margin:0 auto 26px;max-width:560px}
+.steps{position:relative;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+.step{min-width:160px;padding:18px 24px;border-radius:22px;background:rgba(255,255,255,.08);border:1px solid rgba(232,201,100,.55)}
+.step b{display:block;font-size:11px;letter-spacing:3px;color:var(--gold2);margin-bottom:4px}
+.step span{font-weight:900;font-size:19px}
+.step.last{background:linear-gradient(135deg,var(--gold2),var(--gold));border-color:#fff3c0;color:#1d1500}
+.step.last b{color:#5a4505}
+.steps .arr{width:30px;height:30px;color:var(--gold2)}
+
+/* INFLUENCERS / REELS */
+#influencers::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cpath d='M45 5l9 21 21-9-9 21 21 9-21 9 9 21-21-9-9 21-9-21-21 9 9-21-21-9 21-9-9-21 21 9z' fill='none' stroke='%23e8c964' stroke-opacity='.08' stroke-width='1.2'/%3E%3C/svg%3E")}
+#influencers .mini{color:var(--gold2)}
+#influencers .section-head h2{color:#fff}
+#influencers .section-head p{color:#d4eadb}
+.reel-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;max-width:1080px;margin:0 auto}
+.reel{display:block;position:relative;border-radius:36px;padding:9px;text-decoration:none;color:#fff;
+  background:linear-gradient(145deg,#f6e08c,#c9a227 50%,#8a6a10);box-shadow:0 30px 70px rgba(0,0,0,.5),0 0 0 1px rgba(255,243,192,.4)}
+.reel.reveal.show{transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,opacity 1s}
+.reel.reveal.show:hover{transform:translateY(-12px) scale(1.02);box-shadow:0 44px 90px rgba(0,0,0,.6),0 0 50px rgba(232,201,100,.35)}
+.reel-screen{position:relative;aspect-ratio:9/14;border-radius:28px;overflow:hidden;background:#022a14;isolation:isolate}
+.reel-art{position:absolute;inset:0;z-index:-3}
+.r1 .reel-art{background:radial-gradient(circle at 25% 18%,#1bb55e 0,transparent 55%),linear-gradient(165deg,#066a33,#022a14)}
+.r2 .reel-art{background:radial-gradient(circle at 75% 22%,rgba(232,201,100,.6),transparent 50%),linear-gradient(165deg,#0b7a3c,#033a1c)}
+.r3 .reel-art{background:radial-gradient(circle at 50% 0,#17a456 0,transparent 60%),linear-gradient(200deg,#055a2b,#022a14)}
+.reel-screen::before{content:"";position:absolute;inset:0;z-index:-2;opacity:.9;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cpath d='M40 4l8 19 19-8-8 19 19 8-19 8 8 19-19-8-8 19-8-19-19 8 8-19-19-8 19-8-8-19 19 8z' fill='none' stroke='%23ffffff' stroke-opacity='.07' stroke-width='1.1'/%3E%3C/svg%3E"),
+    linear-gradient(180deg,rgba(2,22,10,.05) 0%,rgba(2,22,10,.05) 38%,rgba(2,22,10,.92) 100%)}
+.reel-screen::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;z-index:3;pointer-events:none;background:linear-gradient(100deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-20deg);transition:left .9s ease}
+.reel:hover .reel-screen::after{left:130%}
+.reel-moon{position:absolute;right:-26px;top:70px;width:170px;height:170px;fill:#fff;opacity:.12;z-index:-1;transform:rotate(-12deg)}
+.reel-top{position:absolute;top:18px;left:18px;right:18px;display:flex;justify-content:space-between;align-items:center}
+.reel-ig{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border-radius:30px;font-size:11px;font-weight:900;letter-spacing:2px;background:rgba(2,33,14,.6);border:1px solid rgba(232,201,100,.6);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.reel-ig svg{width:15px;height:15px;fill:var(--gold2)}
+.reel-no{font-family:"Rozha One",serif;font-size:30px;line-height:1;color:var(--gold2);text-shadow:0 2px 10px rgba(0,0,0,.45)}
+.reel-play{position:absolute;left:50%;top:41%;width:82px;height:82px;margin:-41px 0 0 -41px;border-radius:50%;display:grid;place-items:center;
+  background:linear-gradient(145deg,#fff2b8,#e8c964 45%,#b8921f);color:#022a14;box-shadow:0 12px 36px rgba(0,0,0,.5),inset 0 2px 0 rgba(255,255,255,.7);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.reel-play svg{width:34px;height:34px;fill:currentColor;margin-left:5px}
+.reel-play::before,.reel-play::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(232,201,100,.8);animation:playRing 2.6s ease-out infinite}
+.reel-play::after{animation-delay:1.3s}
+.reel:hover .reel-play{transform:scale(1.14)}
+@keyframes playRing{0%{transform:scale(1);opacity:.9}100%{transform:scale(1.9);opacity:0}}
+.reel-info{position:absolute;left:0;right:0;bottom:0;padding:22px 22px 24px}
+.reel-info h3{font-family:"Rozha One",serif;font-weight:400;font-size:clamp(22px,3vw,27px);letter-spacing:1px;margin-bottom:8px}
+.reel-info p{font-size:13.5px;line-height:1.6;color:#d4eadb;margin-bottom:16px}
+.reel-cta{display:inline-flex;align-items:center;gap:10px;padding:11px 20px;border-radius:30px;font-weight:900;font-size:12px;letter-spacing:2px;color:#1d1500;background:linear-gradient(135deg,var(--gold2),var(--gold));box-shadow:0 8px 22px rgba(201,162,39,.45)}
+.reel-cta svg{width:16px;height:16px}
+.reels-more{text-align:center;margin-top:56px}
+@media(min-width:960px){.reel-grid .reel:nth-child(2){margin-top:-22px;margin-bottom:22px}}
+
+/* EVENTS */
+.ev-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:28px;max-width:1200px;margin:0 auto}
+.ev-grid .ev{flex:1 1 min(100%,390px);max-width:580px}
+.ev{position:relative;display:flex;border-radius:30px;background:#fff;border:1px solid #dfeae2;box-shadow:var(--shadow);overflow:hidden}
+.ev.reveal.show{transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s,border-color .4s,opacity 1s}
+.ev.reveal.show:hover{transform:translateY(-8px);box-shadow:0 26px 56px rgba(5,58,28,.22);border-color:var(--gold)}
+.ev::before,.ev::after{content:"";position:absolute;left:130px;width:24px;height:24px;margin-left:-12px;border-radius:50%;background:var(--mint);border:1px solid #dfeae2;z-index:2}
+.ev::before{top:-12px}
+.ev::after{bottom:-12px}
+.ev-thumb{position:relative;flex:none;width:130px;border:0;cursor:pointer;color:#fff;display:grid;place-items:center;overflow:hidden;isolation:isolate;
+  background:radial-gradient(circle at 30% 18%,#1bb55e,transparent 58%),linear-gradient(165deg,#066a33,#022a14)}
+.ev:nth-child(even) .ev-thumb{background:radial-gradient(circle at 70% 20%,rgba(232,201,100,.55),transparent 55%),linear-gradient(165deg,#0b7a3c,#033a1c)}
+.ev-thumb::before{content:"";position:absolute;inset:0;z-index:-1;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M30 3l6 14 14-6-6 14 14 6-14 6 6 14-14-6-6 14-6-14-14 6 6-14-14-6 14-6-6-14 14 6z' fill='none' stroke='%23ffffff' stroke-opacity='.08'/%3E%3C/svg%3E")}
+.ev-no{position:absolute;top:14px;left:16px;font-family:"Rozha One",serif;font-size:26px;line-height:1;color:var(--gold2)}
+.ev-moon{position:absolute;right:-22px;bottom:-10px;width:110px;height:110px;fill:#fff;opacity:.12;transform:rotate(-12deg)}
+.ev-play{position:relative;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;color:#022a14;background:linear-gradient(145deg,#fff2b8,#e8c964 45%,#b8921f);box-shadow:0 10px 26px rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.7);transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.ev-play svg{width:26px;height:26px;fill:currentColor;margin-left:4px}
+.ev-play::before,.ev-play::after{content:"";position:absolute;inset:0;border-radius:50%;border:2px solid rgba(232,201,100,.85);animation:playRing 2.6s ease-out infinite}
+.ev-play::after{animation-delay:1.3s}
+.ev-thumb:hover .ev-play{transform:scale(1.15)}
+.ev-body{flex:1;min-width:0;padding:24px 20px 22px;border-left:2px dashed rgba(201,162,39,.65)}
+.ev-tag{display:inline-block;padding:5px 13px;border-radius:20px;font-size:11px;font-weight:900;letter-spacing:2px;color:var(--green);background:var(--mint);border:1px solid #bcd9c5;margin-bottom:12px}
+.ev-body h3{font-size:clamp(19px,2.6vw,22px);font-weight:900;color:var(--deep);line-height:1.25;margin-bottom:8px}
+.ev-body p{color:var(--muted);line-height:1.65;font-size:14.5px;margin-bottom:18px}
+.ev-actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px}
+.ev-btn,.ev-ig{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 10px;border-radius:30px;font-size:12px;font-weight:900;letter-spacing:1px;text-decoration:none;cursor:pointer;transition:.3s;min-width:0;text-align:center}
+.ev-btn{border:1px solid var(--gold);color:#fff;background:linear-gradient(135deg,var(--green2),var(--deep));box-shadow:0 8px 20px rgba(5,90,43,.35)}
+.ev-btn svg,.ev-ig svg{width:15px;height:15px;fill:currentColor}
+.ev-btn:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(5,90,43,.5)}
+.ev-ig{color:var(--deep);background:#fff;border:1px solid var(--gold)}
+.ev-ig:hover{background:var(--gold2);transform:translateY(-3px)}
+.ev-btn[disabled]{opacity:.55;cursor:default;transform:none;box-shadow:none}
+.ev-more{max-width:1000px;margin:56px auto 0;text-align:center;padding:34px 24px;border-radius:30px;color:#fff;position:relative;overflow:hidden;
+  background:linear-gradient(145deg,#022a14,#055a2b 80%,#033a1c);border:1px solid var(--gold);box-shadow:0 0 0 6px rgba(201,162,39,.12),0 24px 56px rgba(2,42,20,.3)}
+.ev-more::before{content:"";position:absolute;width:320px;height:320px;border-radius:50%;top:-160px;right:-80px;background:radial-gradient(circle,rgba(232,201,100,.25),transparent 65%)}
+.ev-more h3{position:relative;font-family:"Rozha One",serif;font-weight:400;font-size:clamp(24px,4.4vw,34px);letter-spacing:1px;margin-bottom:8px}
+.ev-more p{position:relative;color:#d4eadb;line-height:1.7;max-width:560px;margin:0 auto 22px}
+.ev-more .hero-buttons{position:relative}
+
+/* LIVE LOGO */
+.logo-mark{position:relative;isolation:isolate;animation:logoFloat 3.2s ease-in-out infinite}
+.logo-mark::before{content:"";position:absolute;inset:-5px;border-radius:50%;z-index:-1;background:conic-gradient(from 0deg,#c9a227,#fff3c0,#0b8a43,#e8c964,#c9a227);animation:spin 3.5s linear infinite;-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 7px),#000 calc(100% - 6px));mask:radial-gradient(farthest-side,transparent calc(100% - 7px),#000 calc(100% - 6px))}
+.logo-mark::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:2px solid rgba(201,162,39,.7);z-index:-2;animation:logoPing 2.6s ease-out infinite}
+.logo-mark b{font-weight:900;background:linear-gradient(100deg,#fff 35%,#ffe9a3 50%,#fff 65%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:logoShine 2.8s linear infinite}
+.lm-spark{position:absolute;top:-8px;right:-8px;width:15px;height:15px;background:#fff3b8;clip-path:polygon(50% 0,62% 38%,100% 50%,62% 62%,50% 100%,38% 62%,0 50%,38% 38%);animation:logoSpark 2.2s ease-in-out infinite}
+.logo-text{background:linear-gradient(100deg,#033a1c 35%,#17b058 46%,#e8c964 52%,#17b058 58%,#033a1c 66%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:logoShine 3.4s linear infinite}
+.logo-text small{background:linear-gradient(100deg,#9a7712 35%,#fff0a8 50%,#9a7712 65%);background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:logoShine 3.4s linear infinite .3s}
+@keyframes logoShine{0%{background-position:150% 0}100%{background-position:-50% 0}}
+@keyframes logoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes logoPing{0%{transform:scale(1);opacity:.8}100%{transform:scale(1.6);opacity:0}}
+@keyframes logoSpark{0%,100%{transform:scale(.35) rotate(0);opacity:.35}50%{transform:scale(1.1) rotate(45deg);opacity:1}}
+
+/* LOFI MUSIC BUTTON (speaker) */
+.music-btn{position:fixed;right:22px;bottom:22px;z-index:1000;width:58px;height:58px;border-radius:50%;border:2px solid var(--gold2);cursor:pointer;display:grid;place-items:center;color:#fff;
+  background:radial-gradient(circle at 30% 25%,#17b058,#055a2b 60%,#033a1c);box-shadow:0 12px 30px rgba(2,42,20,.45),inset 0 2px 0 rgba(255,255,255,.3);transition:transform .3s,box-shadow .3s,background .3s,border-color .3s}
+.music-btn:hover{transform:scale(1.1);box-shadow:0 0 0 5px rgba(232,201,100,.25),0 14px 34px rgba(2,42,20,.5)}
+.music-btn:active{transform:scale(.94)}
+.music-btn svg{width:28px;height:28px;display:block;overflow:visible}
+.music-btn .spk{fill:currentColor}
+.music-btn .wv,.music-btn .xx{fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
+.music-btn .wv{opacity:0}
+.music-btn .xx{opacity:0}
+.music-btn.on .wv{opacity:1;animation:wavePulse 1.6s ease-in-out infinite}
+.music-btn.on .w2{animation-delay:.3s}
+.music-btn.off .xx{opacity:1}
+.music-btn.on::before{content:"";position:absolute;inset:-7px;border-radius:50%;border:2px solid rgba(232,201,100,.6);animation:btnRing 2.4s ease-out infinite;pointer-events:none}
+.music-btn.off{background:radial-gradient(circle at 30% 25%,#6f8578,#3f5548 65%,#2c3f34);border-color:rgba(232,201,100,.5);color:#e3ece6}
+.music-btn.hint{animation:hintPulse 1.8s infinite}
+.music-tip{position:fixed;right:96px;bottom:36px;z-index:1000;padding:9px 16px;border-radius:25px;font-size:12px;font-weight:800;letter-spacing:1px;background:#fff;border:1px solid var(--gold);color:var(--green);box-shadow:0 8px 24px rgba(2,42,20,.2);pointer-events:none;opacity:0;transform:translateX(10px);transition:.4s}
+.music-tip.show{opacity:1;transform:none}
+@keyframes wavePulse{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes btnRing{0%{transform:scale(.9);opacity:1}100%{transform:scale(1.3);opacity:0}}
+@keyframes hintPulse{0%,100%{box-shadow:0 0 14px rgba(232,201,100,.55),0 12px 30px rgba(2,42,20,.45)}50%{box-shadow:0 0 38px rgba(232,201,100,1),0 12px 30px rgba(2,42,20,.45)}}
+@media(max-width:700px){.music-btn{right:14px;bottom:14px;width:52px;height:52px}.music-btn svg{width:25px;height:25px}.music-tip{right:76px;bottom:28px;font-size:11px}}
+
+/* VIDEO POPUP */
+.vmodal{position:fixed;inset:0;z-index:99990;display:grid;place-items:center;padding:16px;opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.vmodal.open{opacity:1;visibility:visible}
+.vm-back{position:absolute;inset:0;background:rgba(1,20,9,.82);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.vm-box{position:relative;width:min(100%,460px);max-height:100%;overflow:auto;border-radius:30px;padding:20px 20px 22px;text-align:center;color:#fff;
+  background:linear-gradient(160deg,#055a2b,#022a14);border:1px solid var(--gold);box-shadow:0 0 0 6px rgba(201,162,39,.14),0 40px 90px rgba(0,0,0,.6);
+  transform:translateY(24px) scale(.96);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.vmodal.open .vm-box{transform:none}
+.vm-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold2);background:rgba(2,33,14,.85);color:var(--gold2);font-size:24px;line-height:1;cursor:pointer;z-index:3;transition:.3s}
+.vm-close:hover{background:var(--gold2);color:#022a14;transform:rotate(90deg)}
+.vm-head{padding:4px 44px 14px}
+.vm-tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:10px;font-weight:900;letter-spacing:2px;color:#1d1500;background:linear-gradient(135deg,var(--gold2),var(--gold));margin-bottom:8px}
+.vm-head h3{font-family:"Rozha One",serif;font-weight:400;font-size:22px;letter-spacing:1px}
+.vm-frame{position:relative;height:min(62vh,560px);border-radius:20px;overflow:hidden;background:#fff}
+.vm-frame iframe{position:relative;z-index:2;width:100%;height:100%;border:0;display:block;background:#fff}
+.vm-frame video{position:relative;z-index:2;display:none;width:100%;height:100%;object-fit:contain;background:#000}
+.vm-frame.is-video{background:#000}
+.vm-frame.is-video video{display:block}
+.vm-frame.is-video iframe,.vm-frame.is-video .vm-load{display:none}
+.vm-load{position:absolute;inset:0;z-index:1;display:grid;place-items:center;color:#4d6556;font-weight:700;font-size:14px;letter-spacing:1px}
+.vm-actions{margin-top:16px}
+.vm-actions .btn{min-width:0;width:100%;padding:14px 20px}
+.vm-note{margin-top:10px;font-size:12px;color:#b9d3c2;line-height:1.5}
+
+/* JOIN (ending section) */
+#join{background:linear-gradient(180deg,#033a1c,#022a14);color:#fff;text-align:center;overflow:hidden;isolation:isolate}
+#join::before{content:"";position:absolute;left:50%;top:-40%;width:1200px;height:1200px;margin-left:-600px;z-index:-1;opacity:.55;
+  background:repeating-conic-gradient(rgba(232,201,100,.13) 0 6deg,transparent 6deg 14deg);
+  -webkit-mask-image:radial-gradient(circle,#000,transparent 62%);mask-image:radial-gradient(circle,#000,transparent 62%);animation:spin 160s linear infinite}
+#join::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cpath d='M45 5l9 21 21-9-9 21 21 9-21 9 9 21-21-9-9 21-9-21-21 9 9-21-21-9 21-9-9-21 21 9z' fill='none' stroke='%23e8c964' stroke-opacity='.09' stroke-width='1.2'/%3E%3C/svg%3E")}
+.join-moon{width:92px;height:92px;margin:0 auto 20px;color:#fff;filter:drop-shadow(0 0 16px rgba(255,255,255,.55)) drop-shadow(0 0 40px rgba(232,201,100,.7));animation:moonGlow 6s ease-in-out infinite}
+.join-moon svg{width:100%;height:100%;fill:currentColor}
+#join .mini{color:var(--gold2)}
+#join .section-head{margin-bottom:34px}
+#join .section-head h2{color:#fff}
+#join .section-head h2 span{background:linear-gradient(180deg,#fff2b8,var(--gold) 75%);-webkit-background-clip:text;background-clip:text;color:transparent}
+#join .section-head p{color:#d4eadb}
+#join .hero-buttons{margin-bottom:6px}
+.social-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;max-width:1000px;margin:46px auto 0}
+.social-card{display:flex;align-items:center;gap:16px;text-align:left;padding:20px 22px;border-radius:22px;background:rgba(255,255,255,.07);border:1px solid rgba(232,201,100,.4);color:#fff;text-decoration:none;transition:.3s;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.social-card:hover{transform:translateY(-6px);background:rgba(232,201,100,.14);border-color:var(--gold2);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.sc-ico{flex:none;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1d1500}
+.sc-ico svg{width:26px;height:26px;fill:currentColor}
+.social-card b{display:block;font-size:16px;margin-bottom:2px}
+.social-card small{color:#b9d3c2;font-size:12.5px}
+.join-end{margin-top:52px;font-family:"Cinzel",serif;font-weight:800;letter-spacing:clamp(3px,1.2vw,8px);color:var(--gold2);font-size:clamp(14px,3vw,22px)}
+.join-end::before,.join-end::after{content:"";display:block;height:2px;width:min(220px,50%);margin:0 auto;background:var(--goldline)}
+.join-end::before{margin-bottom:20px}
+.join-end::after{margin-top:20px}
+
+/* CURSOR */
+.has-cursor,.has-cursor *{cursor:none!important}
+#cur,#curRing{position:fixed;left:0;top:0;width:0;height:0;pointer-events:none;opacity:0;transition:opacity .25s}
+#curRing{z-index:100001}
+#cur{z-index:100002}
+#cur .ci{position:absolute;left:-17px;top:-17px;width:34px;height:34px;transition:transform .18s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 0 6px rgba(232,201,100,.95)) drop-shadow(0 2px 3px rgba(2,42,20,.55))}
+#cur .ci svg{width:100%;height:100%;display:block}
+#curRing .cr{position:absolute;left:-22px;top:-22px;width:44px;height:44px;border-radius:50%;border:2px solid rgba(201,162,39,.85);box-shadow:0 0 14px rgba(232,201,100,.5),inset 0 0 10px rgba(232,201,100,.25);transition:transform .25s,border-color .25s,background .25s}
+#cur.hov .ci{transform:scale(1.35) rotate(-14deg)}
+#curRing.hov .cr{transform:scale(1.7);border-color:#0b8a43;background:rgba(11,138,67,.12)}
+#cur.down .ci{transform:scale(.8)}
+#curRing.down .cr{transform:scale(.8)}
+.cspark{position:fixed;width:6px;height:6px;border-radius:50%;pointer-events:none;z-index:100000;animation:csFade .85s ease-out forwards}
+@keyframes csFade{0%{opacity:1;transform:translate(0,0) scale(1)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.2)}}
+@media (hover:none),(pointer:coarse){#cur,#curRing,.cspark{display:none!important}}
+
+footer{text-align:center;padding:0 20px 90px;position:relative;z-index:1;background:#022a14;color:#b9d3c2}
+footer .stripe{margin-bottom:40px}
+footer b{color:var(--gold2)}
+footer .zinda{font-family:"Rozha One",serif;font-size:22px;color:var(--gold2);letter-spacing:2px;margin-bottom:18px}
+footer .f-social{display:flex;justify-content:center;gap:16px;margin-bottom:16px}
+footer .f-social a{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:#fff;text-decoration:none;border:1px solid var(--gold);transition:.3s}
+footer .f-social a svg{width:20px;height:20px;fill:currentColor}
+footer .f-social a:hover{background:var(--gold2);color:#022a14;transform:translateY(-4px)}
+
+.reveal{opacity:0;transform:translateY(50px) scale(.97);transition:1s cubic-bezier(.2,.7,.2,1)}
+.reveal.show{opacity:1;transform:none}
+
+/* ANIMATIONS */
+@keyframes pulseGold{0%,100%{box-shadow:0 0 14px rgba(232,201,100,.5)}50%{box-shadow:0 0 32px rgba(232,201,100,.95)}}
+@keyframes icoFloat{0%,100%{translate:0 0}50%{translate:0 -7px}}
+
+@media(max-width:1400px){nav{gap:18px}nav a{font-size:13px}}
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+  .reveal{opacity:1;transform:none}
+  .rays{animation:none}
+}
+
+/* TABLET + MOBILE */
+@media(max-width:1180px){
+  nav{position:absolute;top:86px;left:0;right:0;flex-direction:column;gap:0;background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;max-height:0;opacity:0;pointer-events:none;transition:.4s;box-shadow:0 20px 50px rgba(2,42,20,.25)}
+  nav.open{max-height:560px;opacity:1;pointer-events:auto}
+  nav a{padding:17px 26px;border-bottom:1px solid #e7efe9}
+  nav a::after{display:none}
+  .menu-btn{display:block}
+  .socials{display:none}
+}
+@media(max-width:700px){
+  header{padding:0 16px;height:64px;top:10px}
+  nav{top:74px}
+  .logo-mark{width:40px;height:40px;font-size:15px}
+  .play-top{padding:11px 16px;font-size:12px}
+  .logo-text{font-size:14px}
+  .logo-text small{font-size:11px}
+  #home{padding:120px 14px 120px}
+  .hero-tag{font-size:11px;letter-spacing:2px;padding:8px 16px}
+  .emblem{width:84px;height:84px;top:92px;right:4%}
+  .soon{padding:34px 16px 30px;border-radius:26px}
+  .soon .kicker{letter-spacing:4px;font-size:11px}
+  .soon .kicker::before,.soon .kicker::after{width:18px}
+  .btn{width:100%;min-width:auto}
+  .hero-buttons{gap:14px}
+  section:not(#home){padding:70px 5%}
+  .section-head{margin-bottom:36px}
+  .mini{letter-spacing:3px;font-size:12px}
+  .mini::before,.mini::after{width:18px}
+  .card{padding:26px}
+  .rooms-box{padding:38px 18px;border-radius:30px}
+  .rooms-box .card{text-align:center}
+  .rooms-box .icon{margin-left:auto;margin-right:auto}
+  .update{padding:24px 20px}
+  .wave{height:50px}
+  .rule-card{padding:28px 22px 24px 28px}
+  .rule-num{font-size:70px}
+  .penalty{padding:30px 16px;border-radius:26px}
+  .steps{flex-direction:column;gap:8px}
+  .steps .arr{transform:rotate(90deg)}
+  .step{width:100%}
+  .join-moon{width:72px;height:72px}
+  .reel-grid{max-width:340px}
+  .reels-more{margin-top:40px}
+  .ev{flex-direction:column}
+  .ev::before,.ev::after{display:none}
+  .ev-thumb{width:100%;height:150px}
+  .ev-body{border-left:0;border-top:2px dashed rgba(201,162,39,.65);padding:22px 20px}
+  .ev-more{padding:28px 16px;margin-top:40px}
+  .vm-box{padding:16px 14px 18px;border-radius:24px}
+  .vm-frame{height:min(60vh,520px)}
+}
+@media(max-width:380px){
+  .logo-text small{display:none}
+  .play-top{padding:10px 13px}
+}
+
+/* TEAM */
+.team-sub{display:flex;align-items:center;justify-content:center;gap:16px;margin:0 auto 30px;font-family:"Cinzel",serif;font-weight:800;letter-spacing:clamp(3px,1vw,6px);font-size:clamp(15px,3vw,21px);color:var(--deep)}
+.team-sub::before,.team-sub::after{content:"";height:2px;width:min(90px,14vw);background:linear-gradient(90deg,transparent,var(--gold))}
+.team-sub::after{transform:scaleX(-1)}
+.team-owners{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;max-width:1100px;margin:0 auto 74px}
+.owner-card{position:relative;overflow:hidden;text-align:center;padding:40px 26px 34px;border-radius:32px;background:#fff;border:1px solid #e1ece4;box-shadow:var(--shadow);transition:.4s}
+.owner-card::before{content:"";position:absolute;width:200px;height:200px;border-radius:50%;top:-90px;left:50%;transform:translateX(-50%);background:rgba(11,138,67,.12);pointer-events:none}
+.owner-card.main{border:2px solid var(--gold);box-shadow:0 18px 50px rgba(201,162,39,.25)}
+.owner-card.main::before{background:rgba(201,162,39,.2)}
+.owner-card:hover{border-color:var(--gold);box-shadow:0 26px 60px rgba(5,58,28,.2)}
+.o-avatar{position:relative;width:98px;height:98px;margin:0 auto 20px;border-radius:50%;display:grid;place-items:center;font-family:"Rozha One",serif;font-size:44px;color:#fff;background:linear-gradient(145deg,var(--green2),var(--deep));box-shadow:0 0 0 4px #fff,0 0 0 6px var(--gold),0 12px 30px rgba(5,90,43,.4)}
+.o-badge{position:absolute;top:-6px;right:-10px;width:36px;height:36px;padding:8px;border-radius:50%;fill:#1d1500;background:linear-gradient(135deg,var(--gold2),var(--gold));box-shadow:0 0 16px rgba(201,162,39,.7)}
+.o-name{position:relative;font-size:clamp(22px,4vw,26px);font-weight:900;color:var(--deep)}
+.o-role{position:relative;display:inline-block;margin-top:14px;padding:8px 20px;border-radius:25px;font-weight:900;font-size:12px;letter-spacing:2.5px}
+.r-owner{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1d1500}
+.r-founder{background:var(--mint);color:var(--green);border:1px solid var(--green2)}
+.r-dev{background:linear-gradient(135deg,var(--green2),var(--deep));color:#fff}
+.team-staff{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;max-width:1100px;margin:auto}
+.staff-card{position:relative;overflow:hidden;padding:28px 26px;border-radius:26px;background:#fff;border:1px solid #e1ece4;border-left:5px solid var(--green2);box-shadow:var(--shadow);transition:.4s}
+.staff-card:nth-child(even){border-left-color:var(--gold)}
+.staff-card:hover{border-color:var(--gold);box-shadow:0 22px 54px rgba(5,58,28,.2)}
+.s-top{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.s-ico{flex:none;width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(145deg,var(--green2),var(--deep));box-shadow:0 8px 20px rgba(5,90,43,.3),inset 0 2px 0 rgba(255,255,255,.3)}
+.s-ico svg{width:26px;height:26px;fill:#fff}
+.s-role{font-weight:900;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-dark)}
+.s-names{display:flex;flex-wrap:wrap;gap:10px}
+.s-chip{padding:10px 20px;border-radius:30px;font-weight:800;font-size:clamp(16px,3vw,19px);color:var(--deep);background:var(--mint);border:1px solid #cfe3d5}
+
+.tilting{transition:transform .12s ease-out,box-shadow .4s,border-color .4s!important;will-change:transform}
+</style>
+</head>
+
+<body class="loading">
+
+<!-- LOADING SCREEN -->
+<div id="loader" aria-hidden="true">
+  <svg id="ldSvg" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"></svg>
+  <button class="ld-skip" id="ldSkip" type="button">SKIP</button>
+</div>
+
+<!-- SVG ICON SPRITE -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="s-crescent" viewBox="0 0 64 64">
+    <path d="M42 6A26 26 0 1 0 58 44 22 22 0 0 1 42 6z"/>
+    <polygon points="45,18 47.12,24.09 53.56,24.22 48.42,28.11 50.29,34.28 45,30.6 39.71,34.28 41.58,28.11 36.44,24.22 42.88,24.09"/>
+  </symbol>
+  <symbol id="s-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" fill="none"/></symbol>
+  <symbol id="s-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+  <symbol id="s-check" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1.5 14.5-4-4 1.4-1.4 2.6 2.6 5.6-5.6 1.4 1.4z"/></symbol>
+  <symbol id="s-plus" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm5 11h-4v4h-2v-4H7v-2h4V7h2v4h4z"/></symbol>
+  <symbol id="s-lock" viewBox="0 0 24 24"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3zm3 3.5a1.8 1.8 0 0 1 1 3.3V19h-2v-2.2a1.8 1.8 0 0 1 1-3.3z"/></symbol>
+  <symbol id="s-invite" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-3.3 0-8 1.7-8 5v2h16v-2c0-3.3-4.7-5-8-5zm10-5V6h-2v3h-3v2h3v3h2v-3h3V9z"/></symbol>
+  <symbol id="s-shield" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5zm-1.2 14.8-3.6-3.6 1.4-1.4 2.2 2.2 4.6-4.6 1.4 1.4z"/></symbol>
+  <symbol id="s-star" viewBox="0 0 24 24"><path d="m12 2 3 6.6 7.2.8-5.4 4.8 1.5 7.1L12 17.7 5.7 21.3l1.5-7.1L1.8 9.4 9 8.6z"/></symbol>
+  <symbol id="s-trophy" viewBox="0 0 24 24"><path d="M7 2h10v2h4v3a4 4 0 0 1-4 4h-.3A6 6 0 0 1 13 14.9V17h3v2h1v3H7v-3h1v-2h3v-2.1A6 6 0 0 1 7.3 11H7a4 4 0 0 1-4-4V4h4zM5 6v1a2 2 0 0 0 2 2V6zm14 0h-2v3a2 2 0 0 0 2-2z"/></symbol>
+  <symbol id="s-wand" viewBox="0 0 24 24"><path d="m4 20 11-11 2 2L6 22zM15 3l1 2.5L18.5 6.5 16 7.5 15 10l-1-2.5-2.5-1L14 5.5zM20 10l.7 1.8 1.8.7-1.8.7L20 15l-.7-1.8-1.8-.7 1.8-.7z"/></symbol>
+  <symbol id="s-crown" viewBox="0 0 24 24"><path d="m3 7 4.5 4L12 4l4.5 7L21 7l-2 12H5zM5.5 21h13v-1.5h-13z"/></symbol>
+  <symbol id="s-phones" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-9 9v7a2 2 0 0 0 2 2h2v-8H5v-1a7 7 0 0 1 14 0v1h-2v8h2a2 2 0 0 0 2-2v-7a9 9 0 0 0-9-9z"/></symbol>
+  <symbol id="s-cup" viewBox="0 0 24 24"><path d="M4 8h13v7a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zm13 1.5h1.5a2.5 2.5 0 0 1 0 5H17z"/><path d="M8 1.5c1.2 1 1.2 2.2 0 3.2M12 1.5c1.2 1 1.2 2.2 0 3.2" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/></symbol>
+  <symbol id="s-chart" viewBox="0 0 24 24"><path d="M3 3h2v16h16v2H3zm4 11 4-5 3 3 6-8 1.6 1.2L14.4 15.6 11.3 12.4 8.6 16z"/></symbol>
+  <symbol id="s-instagram" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.2 5.8a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></symbol>
+  <symbol id="s-youtube" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></symbol>
+  <symbol id="s-discord" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M5.5 6.2C7.2 5 9.1 4.5 9.1 4.5l.5.9c1.600-.3 3.200-.3 4.800 0l.5-.9s1.900.5 3.600 1.700C20.300 9 21.200 12 21 16c-1.400 1.200-2.800 1.900-4.300 2.300l-.9-1.500c.6-.2 1.100-.5 1.600-.9-.2-.1-.4-.2-.6-.3-2.700 1.300-6.900 1.300-9.600 0-.2.100-.4.200-.6.300.5.400 1 .7 1.600.9l-.9 1.500C5.800 17.900 4.400 17.200 3 16c-.2-4 .7-7 2.500-9.800zM9.300 9.900a1.700 1.900 0 1 0 0 3.800 1.700 1.900 0 0 0 0-3.800zm5.400 0a1.700 1.900 0 1 0 0 3.800 1.700 1.900 0 0 0 0-3.800z"/></symbol>
+  <symbol id="s-roblox" viewBox="0 0 24 24"><g transform="rotate(15 12 12)"><path fill-rule="evenodd" d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm5 6a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1z"/></g></symbol>
+  <symbol id="s-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12.500-7.500z"/></symbol>
+  <symbol id="s-location" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.500a2.500 2.500 0 1 1 0-5 2.500 2.500 0 0 1 0 5z"/></symbol>
+  <symbol id="s-users" viewBox="0 0 24 24"><path d="M9 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM9 14c-3.300 0-8 1.700-8 5v2h16v-2c0-3.300-4.700-5-8-5zm8.500.2c2.700.5 5.500 1.900 5.500 4.800v2h-4v-2c0-1.900-.700-3.500-1.500-4.800z"/></symbol>
+  <symbol id="s-code" viewBox="0 0 24 24"><path d="M8.6 16.6 4 12l4.6-4.6L10 8.8 6.8 12l3.2 3.2zm6.8 0-1.4-1.4 3.2-3.2L14 8.8l1.4-1.4L20 12zM13.2 5l1.8.5-4.2 14.5-1.8-.5z"/></symbol>
+  <symbol id="s-ban" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 2a8 8 0 0 1 6.3 12.9L7.1 5.7A8 8 0 0 1 12 4zM5.7 7.1l11.2 11.2A8 8 0 0 1 5.7 7.1z"/></symbol>
+  <symbol id="s-heart" viewBox="0 0 24 24"><path d="M12 21s-8-5.3-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.7-8 11-8 11z"/></symbol>
+  <symbol id="s-door" viewBox="0 0 24 24"><path d="M5 2h11a2 2 0 0 1 2 2v16h2v2H4v-2h1zm9 9a1.2 1.2 0 1 0 0 2.4A1.2 1.2 0 0 0 14 11z"/></symbol>
+</svg>
+
+<div id="progress"></div>
+<div id="curRing"><div class="cr"></div></div>
+<div id="cur"><div class="ci"><svg viewBox="0 0 64 64"><path d="M42 6A26 26 0 1 0 58 44 22 22 0 0 1 42 6z" fill="#e8c964" stroke="#033a1c" stroke-width="3" stroke-linejoin="round"/><polygon points="45,18 47.12,24.09 53.56,24.22 48.42,28.11 50.29,34.28 45,30.6 39.71,34.28 41.58,28.11 36.44,24.22 42.88,24.09" fill="#fff" stroke="#033a1c" stroke-width="2.4" stroke-linejoin="round"/></svg></div></div>
+
+
+<header>
+  <a class="logo" href="#home">
+    <div class="logo-mark"><b>PH</b><i class="lm-spark"></i></div>
+    <div class="logo-text">PAKISTANI<small>HOOD</small></div>
+  </a>
+
+  <nav id="nav">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#rooms">Private Rooms</a>
+    <a href="#updates">Updates</a>
+    <a href="#events">Events</a>
+    <a href="#team">Team</a>
+    <a href="#influencers">Influencers</a>
+    <a href="#rules">Rules</a>
+    <a href="#join">Join Us</a>
+  </nav>
+
+  <div style="display:flex;align-items:center;gap:12px">
+    <a href="https://www.roblox.com/games/107523552375615/Pakistani-Hood" target="_blank" class="play-top">PLAY NOW <svg class="ico"><use href="#s-arrow"/></svg></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu"><svg class="ico"><use href="#s-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="home">
+  <div class="rays"></div>
+  <div id="sparkles" aria-hidden="true"></div>
+  <div class="emblem" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#s-crescent"/></svg></div>
+
+  <div class="socials">
+    <a href="https://www.instagram.com/pakistanihoodofficial/" target="_blank" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24"><use href="#s-instagram"/></svg></a>
+    <a href="https://discord.gg/54RWQYnTGZ" target="_blank" aria-label="Discord"><svg class="ico" viewBox="0 0 24 24"><use href="#s-discord"/></svg></a>
+    <a href="https://www.youtube.com/@manorofgamerz" target="_blank" aria-label="YouTube"><svg class="ico" viewBox="0 0 24 24"><use href="#s-youtube"/></svg></a>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-tag">PAKISTAN ZINDABAD</div>
+    <h1>Pakistani <span>Hood</span></h1>
+    <div class="tagline">PAKISTAN OFFICIAL ROBLOX GAME</div>
+
+    <div class="soon">
+      <div class="kicker">STAY TUNED</div>
+      <div class="big">Something Biggest</div>
+      <div class="sub">Major Update <b>Coming Soon</b></div>
+      <div class="dots"><i></i><i></i><i></i></div>
+      <p>Pakistani Hood ki ab tak ki sabse badi update aa rahi hai. Pehle khabar paane ke liye Discord se jude raho.</p>
+    </div>
+
+    <p class="desc">
+      Pakistan ki galiyon, chai ke dhabon aur rang-birangi rickshawon mein aao. Private Rooms, Trolling Tools,
+      Events, Rep System aur Rep Leaderboard ke saath apna naam banao.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="https://www.roblox.com/games/107523552375615/Pakistani-Hood" target="_blank" class="btn btn-gold"><svg class="ico" viewBox="0 0 24 24"><use href="#s-roblox"/></svg>PLAY ON ROBLOX</a>
+      <a href="https://discord.gg/54RWQYnTGZ" target="_blank" class="btn btn-green"><svg class="ico" viewBox="0 0 24 24"><use href="#s-discord"/></svg>JOIN DISCORD</a>
+      <a href="https://www.tiktok.com/@pakistanihood3/video/7638721195130539284?q=pakistani%20hood&t=1779665328607" target="_blank" class="btn btn-ghost"><svg class="ico" viewBox="0 0 24 24"><use href="#s-play"/></svg>WATCH TRAILER</a>
+    </div>
+  </div>
+
+  <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 50 C240 100 480 0 720 40 C960 80 1200 10 1440 50 L1440 90 L0 90Z" fill="#e8c964" opacity=".55"/>
+    <path d="M0 62 C260 100 500 20 760 56 C1000 88 1220 30 1440 64 L1440 90 L0 90Z" fill="#ffffff"/>
+  </svg>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-head reveal">
+    <div class="mini">ABOUT</div>
+    <h2>About Pakistani Hood</h2>
+    <p>
+      Pakistani Hood ek Pakistan-inspired Roblox game hai jahan tum realistic places explore kar sakte ho,
+      friends ke saath chill, roleplay, events attend aur ek amazing community ka hissa ban sakte ho.
+    </p>
+  </div>
+
+  <div class="cards">
+    <div class="card reveal">
+      <div class="icon"><svg class="ico" viewBox="0 0 24 24"><use href="#s-location"/></svg></div>
+      <h3>Explore Places</h3>
+      <p>Minar-e-Pakistan, Mazar-e-Quaid, Ghanta Ghar jaisi famous jagahein explore karo.</p>
+    </div>
+    <div class="card reveal">
+      <div class="icon"><svg class="ico" viewBox="0 0 24 24"><use href="#s-users"/></svg></div>
+      <h3>Hangout Spots</h3>
+      <p>Friends ke saath chai spots, desi streets aur hangout areas mein time guzaro.</p>
+    </div>
+    <div class="card reveal">
+      <div class="icon"><svg viewBox="0 0 24 24"><use href="#s-star"/></svg></div>
+      <h3>Desi Events</h3>
+      <p>Special events, ceremonies aur rang-birangi community gatherings.</p>
+    </div>
+    <div class="card reveal">
+      <div class="icon"><svg viewBox="0 0 24 24"><use href="#s-shield"/></svg></div>
+      <h3>Safe Community</h3>
+      <p>Friendly, respectful aur safe environment har player ke liye.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRIVATE ROOMS -->
+<section id="rooms">
+  <div class="rooms-box reveal">
+    <div class="badge">NEW UPDATE</div>
+    <h3>Private Rooms Aa Gaye</h3>
+    <p>
+      Ab Pakistani Hood mein apna khud ka Private Room banao. Sirf apne friends ke saath
+      chill karo, roleplay karo aur bina kisi disturbance ke full maza lo.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><use href="#s-lock"/></svg></div>
+        <h3>Apna Private Room</h3>
+        <p>Apna alag room banao jahan sirf tumhari marzi ke players aa sakein.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><use href="#s-invite"/></svg></div>
+        <h3>Friends Ko Invite Karo</h3>
+        <p>Apne friends ko bulao aur ek saath hangout, roleplay aur events enjoy karo.</p>
+      </div>
+      <div class="card">
+        <div class="icon"><svg viewBox="0 0 24 24"><use href="#s-shield"/></svg></div>
+        <h3>Full Privacy</h3>
+        <p>Sukoon se khelo, bina kisi anjaan player ke disturb kiye.</p>
+      </div>
+    </div>
+
+    <div class="hero-buttons">
+      <a href="https://www.roblox.com/games/107523552375615/Pakistani-Hood" target="_blank" class="btn btn-gold"><svg class="ico" viewBox="0 0 24 24"><use href="#s-roblox"/></svg>TRY PRIVATE ROOMS</a>
+      <a href="https://discord.gg/54RWQYnTGZ" target="_blank" class="btn btn-ghost"><svg class="ico" viewBox="0 0 24 24"><use href="#s-discord"/></svg>JOIN DISCORD</a>
+    </div>
+  </div>
+</section>
+
+<!-- UPDATES -->
+<section id="updates">
+  <div class="section-head reveal">
+    <div class="mini">UPDATES</div>
+    <h2>Latest Updates</h2>
+    <p>Pakistani Hood ki sabse nayi additions aur features dekho.</p>
+  </div>
+
+  <div class="update-list">
+
+    <div class="update reveal">
+      <div class="u-top"><div class="u-ico"><svg viewBox="0 0 24 24"><use href="#s-star"/></svg></div><span class="u-num">01</span></div>
+      <div class="u-body">
+        <div class="u-new">NEW UPDATE</div>
+        <h3><span>Reputation</span> System</h3>
+        <p>
+          Ab Pakistani Hood mein apni reputation banao. Dusre players ko rep do, apni profile par
+          reputation dekho aur community mein apna naam roshan karo.
+        </p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Players ko Rep dene ka system</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Premium Rep GUI</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Comments aur rep history</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="update reveal">
+      <div class="u-top"><div class="u-ico"><svg viewBox="0 0 24 24"><use href="#s-trophy"/></svg></div><span class="u-num">02</span></div>
+      <div class="u-body">
+        <div class="u-new">NEW UPDATE</div>
+        <h3>Rep <span>Leaderboard</span></h3>
+        <p>
+          Sabse zyada reputation wale players ab leaderboard par chamkenge.
+          Top par pahunchne ke liye active raho aur community ka dil jeeto.
+        </p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Top players ki ranking</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Apna rank dusron se compare karo</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Competition ka maza</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="update reveal">
+      <div class="u-top"><div class="u-ico"><svg viewBox="0 0 24 24"><use href="#s-wand"/></svg></div><span class="u-num">03</span></div>
+      <div class="u-body">
+        <div class="u-new">NEW UPDATE</div>
+        <h3>New <span>Trolling</span> Tools</h3>
+        <p>
+          Naye trolling tools aa gaye hain. Friends ke saath masti karo, funny moments banao
+          aur server mein full entertainment lao.
+        </p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Bilkul naye fun tools</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Friends ke saath masti</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Aur bhi tools aane wale hain</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="update reveal">
+      <div class="u-top"><div class="u-ico"><svg viewBox="0 0 24 24"><use href="#s-crown"/></svg></div><span class="u-num">04</span></div>
+      <div class="u-body">
+        <div class="u-new">NEW UPDATE</div>
+        <h3>Owner <span>Dap Up</span> Events</h3>
+        <p>
+          Owner ke saath Dap Up Events ab game mein live hain. Events join karo,
+          owner se milo aur community ke saath yaadgar moments banao.
+        </p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Owner ke saath live events</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Sab players ke liye open</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Event updates Discord par</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="update reveal">
+      <div class="u-top"><div class="u-ico"><svg viewBox="0 0 24 24"><use href="#s-phones"/></svg></div><span class="u-num">05</span></div>
+      <div class="u-body">
+        <div class="u-new">NEW UPDATE</div>
+        <h3>DJ <span>Set</span> Events</h3>
+        <p>
+          DJ Set Events mein music, lights aur full party mahol enjoy karo.
+          Friends ke saath aao aur dance floor garma do.
+        </p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Live DJ set</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Party vibes aur lights</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Regular events</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="update reveal">
+      <div class="u-top"><div class="u-ico"><svg viewBox="0 0 24 24"><use href="#s-door"/></svg></div><span class="u-num">06</span></div>
+      <div class="u-body">
+        <div class="u-new">NEW UPDATE</div>
+        <h3>Private <span>Rooms</span></h3>
+        <p>
+          Apna private room banao aur sirf apne friends ke saath hangout karo.
+          Full privacy, full maza.
+        </p>
+        <ul>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Apna alag room</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Friends ko invite karo</li>
+          <li><svg viewBox="0 0 24 24"><use href="#s-check"/></svg>Bina disturbance ke roleplay</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="update reveal">
+      <div class="u-top"><div class="u-ico"><svg viewBox="0 0 24 24"><use href="#s-cup"/></svg></div><span class="u-num">07</span></div>
+      <div class="u-body">
+        <h3>Desi <span>Cafe</span></h3>
+        <p>
+          Naye <strong>Desi Cafe</strong> mein friends ke saath relax karo, chai piyo aur
+          dher saari baatein karo.
+        </p>
+      </div>
+    </div>
+
+    <div class="update reveal">
+      <div class="u-top"><div class="u-ico"><svg viewBox="0 0 24 24"><use href="#s-chart"/></svg></div><span class="u-num">08</span></div>
+      <div class="u-body">
+        <h3><span>200K+</span> Visits</h3>
+        <p>
+          Pakistani Hood ne <strong>200,000+ visits</strong> cross kar liye hain. Amazing community
+          ke pyar aur support ka bohat shukriya.
+        </p>
+      </div>
+    </div>
+
+    <div class="more-box reveal">
+      <svg viewBox="0 0 24 24"><use href="#s-plus"/></svg>
+      <h3>And Much More</h3>
+      <p>
+        Aur bhi bohat kuch aa raha hai. Saari latest news aur announcements ke liye
+        hamare Discord server se jude raho.
+      </p>
+      <a href="https://discord.gg/54RWQYnTGZ" target="_blank" class="btn btn-gold"><svg class="ico" viewBox="0 0 24 24"><use href="#s-discord"/></svg>JOIN DISCORD</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- EVENTS -->
+<section id="events">
+  <div class="section-head reveal">
+    <div class="mini">EVENTS</div>
+    <h2>Pakistani Hood Events</h2>
+    <p>
+      Hamare events ki videos ab seedha website par dekho. Kisi bhi event par click karo aur video yahin chalegi,
+      ya phir Instagram par kholo.
+    </p>
+  </div>
+
+  <div class="ev-grid" id="evGrid"></div>
+
+  <div class="ev-more reveal">
+    <h3>Aur Events Ke Liye Jude Raho</h3>
+    <p>Naye events ki videos pehle Instagram par aati hain aur phir yahan. Event timings ke liye Discord join karo.</p>
+    <div class="hero-buttons">
+      <a href="https://www.instagram.com/pakistanihoodofficial/" target="_blank" rel="noopener" class="btn btn-gold"><svg class="ico" viewBox="0 0 24 24"><use href="#s-instagram"/></svg>FOLLOW ON INSTAGRAM</a>
+      <a href="https://discord.gg/54RWQYnTGZ" target="_blank" rel="noopener" class="btn btn-ghost"><svg class="ico" viewBox="0 0 24 24"><use href="#s-discord"/></svg>JOIN DISCORD</a>
+    </div>
+  </div>
+</section>
+
+<script>
+/* =====================================================================
+   EVENTS KI LIST  (yahan sirf apni Instagram video links badalni hain)
+   ---------------------------------------------------------------------
+   Har event ke liye ek block:
+     tag   : chhota label (jaise "DAP UP", "DJ SET")
+     title : event ka naam
+     desc  : ek line ki detail
+     ig    : Instagram reel ya post ka link (public hona chahiye)
+     video : (optional) apni mp4 video ka path, jaise "videos/200k-event.mp4". Ye dena sabse pakka hai:
+             video website par hi chalegi (Instagram ke embed par depend nahi), aur "INSTAGRAM" button phir bhi
+             ig link par le jayega. Mp4 file index.html ke saath "videos" folder mein rakho.
+     poster: (optional) video ki cover image ka path, jaise "videos/200k-event.jpg"
+   Naya event add karna ho to ek aur { ... }, copy karke list mein daal do.
+   Website par video popup mein chalegi aur "INSTAGRAM" button se Instagram khulega.
+   ===================================================================== */
+const EVENTS = [
+  { tag:"200K", title:"200K Event", desc:"Pakistani Hood ke 200K milestone ka event. Yahin dekho ya Instagram par kholo.", ig:"https://www.instagram.com/p/DfF-2PXzd1W/" },
+  { tag:"DAP UP", title:"Dap Up Event", desc:"Owner ke saath Dap Up event ki video, seedha community ke saath.", ig:"https://www.instagram.com/p/DeBxokrR1Nh/" },
+  { tag:"HALLOWEEN", title:"Halloween Event", desc:"Halloween event ki yaadgar jhalak aur community moments.", ig:"https://www.instagram.com/p/DeU28VeIXFs/" }
+];
+</script>
+
+<!-- TEAM -->
+<section id="team">
+  <div class="section-head reveal">
+    <div class="mini">TEAM</div>
+    <h2>Meet The Team</h2>
+    <p>Pakistani Hood ko chalane wale log. Game owners aur poori staff team yahan dekho.</p>
+  </div>
+
+  <div class="team-sub reveal">GAME OWNERS</div>
+  <div class="team-owners">
+    <div class="owner-card main reveal">
+      <div class="o-avatar"><span>D</span><svg class="o-badge" viewBox="0 0 24 24"><use href="#s-crown"/></svg></div>
+      <div class="o-name">Dev_Spirit</div>
+      <div class="o-role r-owner">OWNER</div>
+    </div>
+    <div class="owner-card reveal">
+      <div class="o-avatar"><span>K</span><svg class="o-badge" viewBox="0 0 24 24"><use href="#s-star"/></svg></div>
+      <div class="o-name">Khan Pagal</div>
+      <div class="o-role r-founder">FOUNDER</div>
+    </div>
+    <div class="owner-card reveal">
+      <div class="o-avatar"><span>B</span><svg class="o-badge" viewBox="0 0 24 24"><use href="#s-code"/></svg></div>
+      <div class="o-name">Badmash</div>
+      <div class="o-role r-dev">HEAD DEVELOPER</div>
+    </div>
+  </div>
+
+  <div class="team-sub reveal">STAFF LIST</div>
+  <div class="team-staff">
+    <div class="staff-card reveal">
+      <div class="s-top"><div class="s-ico"><svg viewBox="0 0 24 24"><use href="#s-wand"/></svg></div><div class="s-role">Builder</div></div>
+      <div class="s-names"><span class="s-chip">Cheeko</span></div>
+    </div>
+    <div class="staff-card reveal">
+      <div class="s-top"><div class="s-ico"><svg viewBox="0 0 24 24"><use href="#s-crown"/></svg></div><div class="s-role">Head of Staff</div></div>
+      <div class="s-names"><span class="s-chip">Dee</span></div>
+    </div>
+    <div class="staff-card reveal">
+      <div class="s-top"><div class="s-ico"><svg viewBox="0 0 24 24"><use href="#s-shield"/></svg></div><div class="s-role">Head Admin</div></div>
+      <div class="s-names"><span class="s-chip">Hmz</span></div>
+    </div>
+    <div class="staff-card reveal">
+      <div class="s-top"><div class="s-ico"><svg viewBox="0 0 24 24"><use href="#s-star"/></svg></div><div class="s-role">Head Moderator</div></div>
+      <div class="s-names"><span class="s-chip">Zodiac</span></div>
+    </div>
+    <div class="staff-card reveal">
+      <div class="s-top"><div class="s-ico"><svg viewBox="0 0 24 24"><use href="#s-users"/></svg></div><div class="s-role">Moderator</div></div>
+      <div class="s-names"><span class="s-chip">ScavengerPlays</span><span class="s-chip">GTR</span><span class="s-chip">EEE</span></div>
+    </div>
+    <div class="staff-card reveal">
+      <div class="s-top"><div class="s-ico"><svg viewBox="0 0 24 24"><use href="#s-check"/></svg></div><div class="s-role">Tester</div></div>
+      <div class="s-names"><span class="s-chip">Bilbo</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- INFLUENCERS / REELS -->
+<section id="influencers">
+  <div class="section-head reveal">
+    <div class="mini">INFLUENCERS</div>
+    <h2>Featured Reels</h2>
+    <p>Influencers, creators aur hamari community ke saath Pakistani Hood dekho.</p>
+  </div>
+
+  <div class="reel-grid">
+    <a class="reel r1 reveal" href="https://www.instagram.com/p/De6y6TVvbr7/" target="_blank" rel="noopener">
+      <div class="reel-screen">
+        <div class="reel-art"></div>
+        <svg class="reel-moon" viewBox="0 0 64 64"><use href="#s-crescent"/></svg>
+        <div class="reel-top">
+          <span class="reel-ig"><svg viewBox="0 0 24 24"><use href="#s-instagram"/></svg>INSTAGRAM</span>
+          <span class="reel-no">01</span>
+        </div>
+        <div class="reel-play"><svg viewBox="0 0 24 24"><use href="#s-play"/></svg></div>
+        <div class="reel-info">
+          <h3>Featured Reel #1</h3>
+          <p>Hamari community ki share ki hui amazing Pakistani Hood reel dekho.</p>
+          <span class="reel-cta">WATCH REEL <svg class="ico" viewBox="0 0 24 24"><use href="#s-arrow"/></svg></span>
+        </div>
+      </div>
+    </a>
+    <a class="reel r2 reveal" href="https://www.instagram.com/p/Dc27WzxRyVY/" target="_blank" rel="noopener">
+      <div class="reel-screen">
+        <div class="reel-art"></div>
+        <svg class="reel-moon" viewBox="0 0 64 64"><use href="#s-crescent"/></svg>
+        <div class="reel-top">
+          <span class="reel-ig"><svg viewBox="0 0 24 24"><use href="#s-instagram"/></svg>INSTAGRAM</span>
+          <span class="reel-no">02</span>
+        </div>
+        <div class="reel-play"><svg viewBox="0 0 24 24"><use href="#s-play"/></svg></div>
+        <div class="reel-info">
+          <h3>Featured Reel #2</h3>
+          <p>Ek aur creator Pakistani Hood ka experience dikha raha hai.</p>
+          <span class="reel-cta">WATCH REEL <svg class="ico" viewBox="0 0 24 24"><use href="#s-arrow"/></svg></span>
+        </div>
+      </div>
+    </a>
+    <a class="reel r3 reveal" href="https://www.instagram.com/p/DaXzhHAt3M7/" target="_blank" rel="noopener">
+      <div class="reel-screen">
+        <div class="reel-art"></div>
+        <svg class="reel-moon" viewBox="0 0 64 64"><use href="#s-crescent"/></svg>
+        <div class="reel-top">
+          <span class="reel-ig"><svg viewBox="0 0 24 24"><use href="#s-instagram"/></svg>INSTAGRAM</span>
+          <span class="reel-no">03</span>
+        </div>
+        <div class="reel-play"><svg viewBox="0 0 24 24"><use href="#s-play"/></svg></div>
+        <div class="reel-info">
+          <h3>Featured Reel #3</h3>
+          <p>Aur bhi fun moments, events aur community highlights.</p>
+          <span class="reel-cta">WATCH REEL <svg class="ico" viewBox="0 0 24 24"><use href="#s-arrow"/></svg></span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="reels-more reveal">
+    <a href="https://www.instagram.com/pakistanihoodofficial/" target="_blank" class="btn btn-gold"><svg class="ico" viewBox="0 0 24 24"><use href="#s-instagram"/></svg>MORE ON INSTAGRAM</a>
+  </div>
+</section>
+
+<!-- RULES -->
+<section id="rules">
+  <div class="section-head reveal">
+    <div class="mini">RULES</div>
+    <h2>Game Rules</h2>
+    <p>Sab ke liye maze ka mahol banaye rakhne ke liye in rules ko follow karo.</p>
+  </div>
+
+  <div class="rule-grid">
+    <div class="rule-card reveal">
+      <div class="rule-num">01</div>
+      <div class="rule-ico"><svg viewBox="0 0 24 24"><use href="#s-ban"/></svg></div>
+      <h3>No Exploiting / Hacking</h3>
+      <p>Exploits, hacks, scripts ya cheating tools use karna strictly allowed nahi.</p>
+      <span class="rule-tag tag-strict">ZERO TOLERANCE</span>
+    </div>
+    <div class="rule-card reveal">
+      <div class="rule-num">02</div>
+      <div class="rule-ico"><svg viewBox="0 0 24 24"><use href="#s-heart"/></svg></div>
+      <h3>Respect All Players</h3>
+      <p>Har player ke sath respect se baat karo. Abuse, insults aur harassment allowed nahi.</p>
+      <span class="rule-tag tag-must">MUST FOLLOW</span>
+    </div>
+    <div class="rule-card reveal">
+      <div class="rule-num">03</div>
+      <div class="rule-ico"><svg viewBox="0 0 24 24"><use href="#s-shield"/></svg></div>
+      <h3>No Toxicity / Hate Speech</h3>
+      <p>Toxic behavior, hate speech, racism ya religious disrespect bilkul allowed nahi.</p>
+      <span class="rule-tag tag-strict">ZERO TOLERANCE</span>
+    </div>
+    <div class="rule-card reveal">
+      <div class="rule-num">04</div>
+      <div class="rule-ico"><svg viewBox="0 0 24 24"><use href="#s-star"/></svg></div>
+      <h3>Clean Roleplay</h3>
+      <p>Roleplay ko fun, clean aur community-friendly rakho.</p>
+      <span class="rule-tag tag-must">MUST FOLLOW</span>
+    </div>
+    <div class="rule-card reveal">
+      <div class="rule-num">05</div>
+      <div class="rule-ico"><svg viewBox="0 0 24 24"><use href="#s-trophy"/></svg></div>
+      <h3>Fair Rep System Use</h3>
+      <p>Rep system ka misuse, rep farming ya fake rep dena allowed nahi. Genuine raho.</p>
+      <span class="rule-tag tag-fair">PLAY FAIR</span>
+    </div>
+    <div class="rule-card reveal">
+      <div class="rule-num">06</div>
+      <div class="rule-ico"><svg viewBox="0 0 24 24"><use href="#s-wand"/></svg></div>
+      <h3>Trolling Tools Ka Sahi Use</h3>
+      <p>Trolling tools sirf masti ke liye hain. Kisi ko tang karna ya harassment karna allowed nahi.</p>
+      <span class="rule-tag tag-fair">PLAY FAIR</span>
+    </div>
+    <div class="rule-card reveal">
+      <div class="rule-num">07</div>
+      <div class="rule-ico"><svg viewBox="0 0 24 24"><use href="#s-lock"/></svg></div>
+      <h3>Private Rooms Ke Rules</h3>
+      <p>Private rooms mein bhi game ke saare rules lagu hain. Rules todne par room band ho sakta hai.</p>
+      <span class="rule-tag tag-must">MUST FOLLOW</span>
+    </div>
+    <div class="rule-card reveal">
+      <div class="rule-num">08</div>
+      <div class="rule-ico"><svg viewBox="0 0 24 24"><use href="#s-crown"/></svg></div>
+      <h3>Follow Staff Instructions</h3>
+      <p>Staff ke rules aur instructions follow karo warna warning/kick/ban ho sakta hai.</p>
+      <span class="rule-tag tag-must">MUST FOLLOW</span>
+    </div>
+  </div>
+
+  <div class="penalty reveal">
+    <h3>Rules Todne Par Kya Hoga?</h3>
+    <p>Rules todne par staff action le sakta hai. Har baar seedha ban nahi hota, lekin baar baar ki ghalti bhari pad sakti hai.</p>
+    <div class="steps">
+      <div class="step"><b>STEP 1</b><span>Warning</span></div>
+      <svg class="ico arr" viewBox="0 0 24 24"><use href="#s-arrow"/></svg>
+      <div class="step"><b>STEP 2</b><span>Kick</span></div>
+      <svg class="ico arr" viewBox="0 0 24 24"><use href="#s-arrow"/></svg>
+      <div class="step last"><b>STEP 3</b><span>Ban</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOIN (ending) -->
+<section id="join">
+  <div class="join-moon reveal" aria-hidden="true"><svg viewBox="0 0 64 64"><use href="#s-crescent"/></svg></div>
+  <div class="section-head reveal">
+    <div class="mini">JOIN US</div>
+    <h2>Ready To Join <span>The Hood?</span></h2>
+    <p>
+      Pakistani Hood ki community ka hissa bano. Game khelo, friends banao aur
+      sabse badi update ke liye sab se pehle khabar pao.
+    </p>
+  </div>
+
+  <div class="hero-buttons reveal">
+    <a href="https://www.roblox.com/games/107523552375615/Pakistani-Hood" target="_blank" class="btn btn-gold"><svg class="ico" viewBox="0 0 24 24"><use href="#s-roblox"/></svg>PLAY NOW</a>
+    <a href="https://discord.gg/54RWQYnTGZ" target="_blank" class="btn btn-ghost"><svg class="ico" viewBox="0 0 24 24"><use href="#s-discord"/></svg>JOIN DISCORD</a>
+  </div>
+
+  <div class="social-grid">
+    <a class="social-card reveal" href="https://discord.gg/54RWQYnTGZ" target="_blank">
+      <div class="sc-ico"><svg viewBox="0 0 24 24"><use href="#s-discord"/></svg></div>
+      <div><b>Discord</b><small>Community aur announcements</small></div>
+    </a>
+    <a class="social-card reveal" href="https://www.instagram.com/pakistanihoodofficial/" target="_blank">
+      <div class="sc-ico"><svg viewBox="0 0 24 24"><use href="#s-instagram"/></svg></div>
+      <div><b>Instagram</b><small>@pakistanihoodofficial</small></div>
+    </a>
+    <a class="social-card reveal" href="https://www.youtube.com/@manorofgamerz" target="_blank">
+      <div class="sc-ico"><svg viewBox="0 0 24 24"><use href="#s-youtube"/></svg></div>
+      <div><b>YouTube</b><small>Videos aur updates</small></div>
+    </a>
+    <a class="social-card reveal" href="https://www.roblox.com/games/107523552375615/Pakistani-Hood" target="_blank">
+      <div class="sc-ico"><svg viewBox="0 0 24 24"><use href="#s-roblox"/></svg></div>
+      <div><b>Roblox</b><small>Game abhi khelo</small></div>
+    </a>
+  </div>
+
+  <div class="join-end reveal">PAKISTAN ZINDABAD</div>
+</section>
+
+<!-- LOFI MUSIC -->
+<div class="music-tip" id="musicTip">TAP FOR LOFI MUSIC</div>
+<button class="music-btn off hint" id="musicBtn" type="button" aria-label="Play lofi music" aria-pressed="false">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path class="spk" d="M3 9.5v5h3.8L12 19V5L6.8 9.5z"/>
+    <path class="wv w1" d="M15.6 9.2a4.2 4.2 0 0 1 0 5.6"/>
+    <path class="wv w2" d="M18.4 6.6a8 8 0 0 1 0 10.8"/>
+    <path class="xx" d="M15.4 9.4l5.2 5.2M20.6 9.4l-5.2 5.2"/>
+  </svg>
+</button>
+
+<!-- VIDEO POPUP -->
+<div class="vmodal" id="vmodal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Event video">
+  <div class="vm-back" id="vmBack"></div>
+  <div class="vm-box">
+    <button class="vm-close" id="vmClose" type="button" aria-label="Close">&times;</button>
+    <div class="vm-head"><span class="vm-tag" id="vmTag">EVENT</span><h3 id="vmTitle"></h3></div>
+    <div class="vm-frame" id="vmFrameBox">
+      <div class="vm-load">Video load ho rahi hai...</div>
+      <video id="vmVideo" controls playsinline preload="none"></video>
+      <iframe id="vmFrame" title="Event video" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture; fullscreen"></iframe>
+    </div>
+    <div class="vm-actions"><a id="vmIg" class="btn btn-gold" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24"><use href="#s-instagram"/></svg>OPEN ON INSTAGRAM</a></div>
+    <p class="vm-note">Video na chale to "Open on Instagram" se dekh lo.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="stripe"></div>
+  <div class="zinda">PAKISTAN ZINDABAD</div>
+  <div class="f-social">
+    <a href="https://www.instagram.com/pakistanihoodofficial/" target="_blank" aria-label="Instagram"><svg class="ico" viewBox="0 0 24 24"><use href="#s-instagram"/></svg></a>
+    <a href="https://discord.gg/54RWQYnTGZ" target="_blank" aria-label="Discord"><svg class="ico" viewBox="0 0 24 24"><use href="#s-discord"/></svg></a>
+    <a href="https://www.youtube.com/@manorofgamerz" target="_blank" aria-label="YouTube"><svg class="ico" viewBox="0 0 24 24"><use href="#s-youtube"/></svg></a>
+    <a href="https://www.roblox.com/games/107523552375615/Pakistani-Hood" target="_blank" aria-label="Roblox"><svg class="ico" viewBox="0 0 24 24"><use href="#s-roblox"/></svg></a>
+  </div>
+  <p>&copy; 2026 <b>Pakistani Hood</b>. All Rights Reserved.</p>
+</footer>
+
+<script>
+/* =========================================================
+   LOADING SCREEN
+   Halloween scene liquid ki tarah neeche tapak kar utarti hai,
+   phir gold liquid, aur uske neeche se Pakistani theme aati hai.
+   ========================================================= */
+(function(){
+  const ld = document.getElementById("loader");
+  const svg = document.getElementById("ldSvg");
+  const body = document.body;
+  const skipBtn = document.getElementById("ldSkip");
+  if(!ld || !svg) { body.classList.remove("loading"); return; }
+
+  function finish(){
+    body.classList.remove("loading");
+    ld.classList.add("done");
+    setTimeout(()=>{ if(ld.parentNode) ld.parentNode.removeChild(ld); },1000);
+  }
+  if(matchMedia("(prefers-reduced-motion:reduce)").matches){ finish(); return; }
+
+  const NS = "http://www.w3.org/2000/svg";
+  const W = Math.max(320,innerWidth), H = Math.max(480,innerHeight);
+  const cx = W/2, cy = H/2;
+  const s = Math.min(W/900, H/720, 1.3);
+  const pitch = Math.max(30, Math.min(54, W/20));
+  const n = Math.ceil(W/pitch) + 3;
+  const reach = H + pitch*3 + 140;
+  const blur = Math.max(9, pitch*0.32);
+  svg.setAttribute("viewBox","0 0 "+W+" "+H);
+
+  /* stars for the halloween sky */
+  let stars = "";
+  for(let i=0;i<26;i++){
+    const x = Math.random()*W, y = Math.random()*H*0.7, r = 1+Math.random()*2;
+    stars += '<circle class="ld-twinkle" style="animation-delay:'+(Math.random()*2).toFixed(2)+'s" cx="'+x.toFixed(0)+'" cy="'+y.toFixed(0)+'" r="'+r.toFixed(1)+'" fill="#ffd9a0"/>';
+  }
+  /* gold sparkles for the pakistani scene */
+  let gs = "";
+  for(let i=0;i<22;i++){
+    const x = Math.random()*W, y = Math.random()*H, r = 1+Math.random()*2.4;
+    gs += '<circle class="ld-twinkle" style="animation-delay:'+(Math.random()*2).toFixed(2)+'s" cx="'+x.toFixed(0)+'" cy="'+y.toFixed(0)+'" r="'+r.toFixed(1)+'" fill="#f3da82"/>';
+  }
+
+  svg.innerHTML =
+  '<defs>'+
+    '<radialGradient id="ldHalBg" cx="50%" cy="42%" r="78%"><stop offset="0" stop-color="#4b0f6d"/><stop offset=".55" stop-color="#1c0830"/><stop offset="1" stop-color="#070110"/></radialGradient>'+
+    '<radialGradient id="ldMoon" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ffc36b"/><stop offset=".65" stop-color="#ff7a18"/><stop offset="1" stop-color="#ff7a18" stop-opacity="0"/></radialGradient>'+
+    '<radialGradient id="ldPkBg" cx="50%" cy="40%" r="80%"><stop offset="0" stop-color="#14944c"/><stop offset=".6" stop-color="#06502a"/><stop offset="1" stop-color="#022a14"/></radialGradient>'+
+    '<linearGradient id="ldGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b8921f"/><stop offset=".5" stop-color="#f6e08c"/><stop offset="1" stop-color="#b8921f"/></linearGradient>'+
+    '<linearGradient id="ldGoldTxt" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff2b8"/><stop offset="1" stop-color="#d4aa2c"/></linearGradient>'+
+    '<filter id="ldGlow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>'+
+    '<filter id="ldGoo" filterUnits="userSpaceOnUse" x="-300" y="-400" width="'+(W+600)+'" height="'+(H+900)+'" color-interpolation-filters="sRGB">'+
+      '<feGaussianBlur in="SourceGraphic" stdDeviation="'+blur+'" result="b"/>'+
+      '<feColorMatrix in="b" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 24 -10"/>'+
+    '</filter>'+
+    '<path id="ldBat" d="M0 0C-6-8-18-14-34-10C-28-4-26 4-22 8C-16 2-8 4-4 10L0 6L4 10C8 4 16 2 22 8C26 4 28-4 34-10C18-14 6-8 0 0Z"/>'+
+    '<mask id="ldMH" maskUnits="userSpaceOnUse" x="-300" y="-400" width="'+(W+600)+'" height="'+(H+900)+'">'+
+      '<rect x="-300" y="-400" width="'+(W+600)+'" height="'+(H+900)+'" fill="#fff"/>'+
+      '<g id="ldGH" filter="url(#ldGoo)" fill="#000"></g>'+
+    '</mask>'+
+    '<mask id="ldMG" maskUnits="userSpaceOnUse" x="-300" y="-400" width="'+(W+600)+'" height="'+(H+900)+'">'+
+      '<rect x="-300" y="-400" width="'+(W+600)+'" height="'+(H+900)+'" fill="#fff"/>'+
+      '<g id="ldGG" filter="url(#ldGoo)" fill="#000"></g>'+
+    '</mask>'+
+  '</defs>'+
+
+  /* ---------- LAYER 1 (neeche): PAKISTANI THEME ---------- */
+  '<g id="ldPk">'+
+    '<rect width="'+W+'" height="'+H+'" fill="url(#ldPkBg)"/>'+ gs +
+    '<g transform="translate('+cx+','+cy+') scale('+s+')">'+
+      '<g class="ld-moon" filter="url(#ldGlow)" transform="translate(0,-70)">'+
+        '<g transform="scale(3.4) translate(-32,-32)" fill="#fff">'+
+          '<path d="M42 6A26 26 0 1 0 58 44 22 22 0 0 1 42 6z"/>'+
+          '<polygon points="45,18 47.12,24.09 53.56,24.22 48.42,28.11 50.29,34.28 45,30.6 39.71,34.28 41.58,28.11 36.44,24.22 42.88,24.09"/>'+
+        '</g>'+
+      '</g>'+
+      '<text x="0" y="168" text-anchor="middle" font-family="Rozha One,Georgia,serif" font-size="68" fill="url(#ldGoldTxt)" letter-spacing="4">PAKISTANI HOOD</text>'+
+      '<rect x="-150" y="190" width="300" height="3" rx="2" fill="url(#ldGold)"/>'+
+      '<text x="0" y="232" text-anchor="middle" font-family="Cinzel,Georgia,serif" font-weight="800" font-size="22" fill="#fff" letter-spacing="9">PAKISTAN ZINDABAD</text>'+
+    '</g>'+
+  '</g>'+
+
+  /* ---------- LAYER 2 (beech): GOLD LIQUID ---------- */
+  '<g id="ldGoldL" mask="url(#ldMG)">'+
+    '<rect x="-300" y="-400" width="'+(W+600)+'" height="'+(H+900)+'" fill="url(#ldGold)"/>'+
+  '</g>'+
+
+  /* ---------- LAYER 3 (upar): HALLOWEEN ---------- */
+  '<g id="ldHal" mask="url(#ldMH)">'+
+    '<rect x="-300" y="-400" width="'+(W+600)+'" height="'+(H+900)+'" fill="url(#ldHalBg)"/>'+ stars +
+    '<g transform="translate('+cx+','+cy+') scale('+s+')">'+
+      '<circle class="ld-moon" cx="0" cy="-30" r="250" fill="url(#ldMoon)" opacity=".7"/>'+
+      /* bats */
+      '<g fill="#0a0212">'+
+        '<use class="ld-flap" href="#ldBat" transform="translate(-230,-210) scale(1.4)"/>'+
+        '<use class="ld-flap" style="animation-delay:.1s" href="#ldBat" transform="translate(220,-230) scale(1.7)"/>'+
+        '<use class="ld-flap" style="animation-delay:.2s" href="#ldBat" transform="translate(120,-150) scale(1)"/>'+
+        '<use class="ld-flap" style="animation-delay:.15s" href="#ldBat" transform="translate(-120,-165) scale(1.1)"/>'+
+      '</g>'+
+      /* ghost */
+      '<g class="ld-float" style="animation-delay:.4s"><g transform="translate(-290,70) scale(1.5)" opacity=".92">'+
+        '<path d="M-30 40V-10a30 34 0 0 1 60 0V40l-10-10-10 10-10-10-10 10-10-10z" fill="#f4ecff"/>'+
+        '<circle cx="-10" cy="-8" r="5" fill="#1a0a2a"/><circle cx="10" cy="-8" r="5" fill="#1a0a2a"/><ellipse cx="0" cy="10" rx="5" ry="7" fill="#1a0a2a"/>'+
+      '</g></g>'+
+      '<g class="ld-float" style="animation-delay:1.1s"><g transform="translate(300,90) scale(1.1)" opacity=".85">'+
+        '<path d="M-30 40V-10a30 34 0 0 1 60 0V40l-10-10-10 10-10-10-10 10-10-10z" fill="#f4ecff"/>'+
+        '<circle cx="-10" cy="-8" r="5" fill="#1a0a2a"/><circle cx="10" cy="-8" r="5" fill="#1a0a2a"/><ellipse cx="0" cy="10" rx="5" ry="7" fill="#1a0a2a"/>'+
+      '</g></g>'+
+      /* pumpkin */
+      '<g transform="translate(0,-25)">'+
+        '<ellipse cx="0" cy="115" rx="140" ry="18" fill="#000" opacity=".4"/>'+
+        '<ellipse cx="-62" cy="0" rx="72" ry="98" fill="#e86a0a"/>'+
+        '<ellipse cx="62" cy="0" rx="72" ry="98" fill="#e86a0a"/>'+
+        '<ellipse cx="0" cy="0" rx="88" ry="104" fill="#ff8a1f"/>'+
+        '<ellipse cx="0" cy="0" rx="48" ry="104" fill="none" stroke="#c4510a" stroke-width="5"/>'+
+        '<ellipse cx="0" cy="0" rx="20" ry="104" fill="none" stroke="#c4510a" stroke-width="4"/>'+
+        '<path d="M-10 -100q2-30 22-38l8 12q-12 6-10 26z" fill="#3b5a18"/>'+
+        '<g class="ld-flick" filter="url(#ldGlow)" fill="#ffd23f">'+
+          '<path d="M-70 -28L-40 -62L-18 -24z"/><path d="M70 -28L40 -62L18 -24z"/>'+
+          '<path d="M0 -6L-12 18H12z"/>'+
+          '<path d="M-72 30Q0 96 72 30L58 24L44 46L26 26L0 52L-26 26L-44 46L-58 24Z"/>'+
+        '</g>'+
+      '</g>'+
+      '<text x="0" y="205" text-anchor="middle" font-family="Creepster,Rozha One,cursive" font-size="64" fill="#ff7a18" letter-spacing="5">HALLOWEEN HOOD</text>'+
+      '<text x="0" y="248" text-anchor="middle" font-family="Montserrat,sans-serif" font-weight="800" font-size="18" fill="#cdb4ff" letter-spacing="9">LOADING<tspan class="ld-dot">.</tspan><tspan class="ld-dot">.</tspan><tspan class="ld-dot">.</tspan></text>'+
+    '</g>'+
+  '</g>';
+
+  /* ---------- liquid drips ---------- */
+  function makeCols(group, offset){
+    const cols = [];
+    for(let i=0;i<n;i++){
+      const x = -pitch + i*pitch + pitch/2;
+      const r = document.createElementNS(NS,"rect");
+      const c = document.createElementNS(NS,"circle");
+      group.appendChild(r); group.appendChild(c);
+      cols.push({
+        x:x, r:r, c:c,
+        d: offset + (0.5+0.5*Math.sin(i*0.85))*0.35 + Math.random()*0.35,
+        dur: 1.4 + Math.random()*0.7
+      });
+    }
+    return cols;
+  }
+  function update(cols,t){
+    let done = true;
+    for(let i=0;i<cols.length;i++){
+      const k = cols[i];
+      const p = Math.min(1,Math.max(0,(t-k.d)/k.dur));
+      if(p<1) done = false;
+      const e = Math.pow(p,1.7);
+      const w = pitch*(0.28*Math.min(1,p*8) + 0.97*p);
+      const len = e*reach;
+      k.r.setAttribute("x",(k.x-w/2).toFixed(2));
+      k.r.setAttribute("y","-120");
+      k.r.setAttribute("width",w.toFixed(2));
+      k.r.setAttribute("height",(len+120).toFixed(2));
+      k.c.setAttribute("cx",k.x.toFixed(2));
+      k.c.setAttribute("cy",len.toFixed(2));
+      k.c.setAttribute("r",(w*0.78).toFixed(2));
+    }
+    return done;
+  }
+
+  function makeBar(group){
+    const r = document.createElementNS(NS,"rect");
+    r.setAttribute("x","-300"); r.setAttribute("y","-500"); r.setAttribute("width",String(W+600)); r.setAttribute("height","500");
+    group.appendChild(r);
+    return r;
+  }
+  function updateBar(r,t,off){
+    const p = Math.min(1,Math.max(0,(t-off-0.5)/2.3));
+    const y = (H + pitch*2.6) * Math.pow(p,1.35);
+    r.setAttribute("height",(y+500).toFixed(1));
+    return p >= 1;
+  }
+  const gH = svg.querySelector("#ldGH"), gG = svg.querySelector("#ldGG");
+  const halBar = makeBar(gH), goldBar = makeBar(gG);
+  const halCols = makeCols(gH, 0);
+  const goldCols = makeCols(gG, 0.38);
+
+  const HOLD = 1400;       /* Halloween screen kitni der dikhe (ms) */
+  let pageLoaded = document.readyState === "complete", fontsReady = false;
+  addEventListener("load",()=>{ pageLoaded = true; });
+  (function(){
+    const done = ()=>{ fontsReady = true; };
+    if(document.fonts && document.fonts.load){
+      Promise.all([
+        document.fonts.load('68px "Rozha One"'),
+        document.fonts.load('800 22px "Cinzel"'),
+        document.fonts.load('64px "Creepster"'),
+        document.fonts.load('800 18px "Montserrat"')
+      ]).then(done,done);
+      setTimeout(done,3000);
+    } else done();
+  })();
+  let startAt = null, ended = false;
+  const t0 = performance.now();
+
+  function frame(now){
+    if(ended) return;
+    if(startAt === null){
+      if(now - t0 >= HOLD && pageLoaded && fontsReady) startAt = now;
+      else { requestAnimationFrame(frame); return; }
+    }
+    const t = (now - startAt)/1000;
+    update(halCols,t); updateBar(halBar,t,0);
+    const f1 = update(goldCols,t);
+    const f2 = updateBar(goldBar,t,0.38);
+    if(f1 && f2){
+      ended = true;
+      setTimeout(finish,650);   /* Pakistani theme thori der dikhe */
+      return;
+    }
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+
+  skipBtn.addEventListener("click",()=>{ if(!ended){ ended = true; finish(); } });
+  /* safety: kisi wajah se atak jaye to 12s baad hata do */
+  setTimeout(()=>{ if(!ended){ ended = true; finish(); } },12000);
+})();
+
+/* ===== Mobile menu ===== */
+const nav = document.getElementById("nav");
+document.getElementById("menuBtn").addEventListener("click",()=>nav.classList.toggle("open"));
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+
+/* ===== Scroll progress ===== */
+const progress = document.getElementById("progress");
+function onScroll(){
+  const h = document.documentElement.scrollHeight - innerHeight;
+  progress.style.width = (h>0 ? (scrollY/h*100) : 0) + "%";
+}
+addEventListener("scroll",onScroll,{passive:true}); onScroll();
+
+/* ===== Hero sparkles ===== */
+(function(){
+  const box = document.getElementById("sparkles");
+  const count = innerWidth < 700 ? 12 : 26;
+  for(let i=0;i<count;i++){
+    const e = document.createElement("div");
+    e.className = "sp";
+    e.style.left = (Math.random()*100) + "%";
+    e.style.setProperty("--sx",(Math.random()*160-80)+"px");
+    e.style.animationDuration = (9 + Math.random()*12) + "s";
+    e.style.animationDelay = (-Math.random()*20) + "s";
+    const s = 2 + Math.random()*4;
+    e.style.width = e.style.height = s + "px";
+    if(Math.random()>.65){ e.style.background = "#fff"; e.style.boxShadow = "0 0 10px 2px rgba(255,255,255,.7)"; }
+    box.appendChild(e);
+  }
+})();
+
+/* ===== Events: cards + video popup ===== */
+(function(){
+  const grid = document.getElementById("evGrid");
+  if(!grid || typeof EVENTS === "undefined") return;
+  const modal = document.getElementById("vmodal"), frame = document.getElementById("vmFrame");
+  const mTag = document.getElementById("vmTag"), mTitle = document.getElementById("vmTitle"), mIg = document.getElementById("vmIg");
+  let lastFocus = null;
+
+  function embedUrl(u){
+    try{
+      const x = new URL(u);
+      if(!/instagram\.com$/.test(x.hostname.replace(/^www\./,""))) return "";
+      return "https://www.instagram.com" + x.pathname.replace(/\/+$/,"") + "/embed/";
+    }catch(e){ return ""; }
+  }
+  const vid = document.getElementById("vmVideo"), box = document.getElementById("vmFrameBox");
+  function openVideo(ev){
+    const src = embedUrl(ev.ig);
+    if(!src && !ev.video){ if(ev.ig) window.open(ev.ig,"_blank","noopener"); return; }
+    lastFocus = document.activeElement;
+    mTag.textContent = ev.tag || "EVENT";
+    mTitle.textContent = ev.title || "";
+    mIg.href = ev.ig || "#";
+    mIg.style.display = ev.ig ? "" : "none";
+    if(ev.video){
+      /* website par khud host ki hui video (sabse pakka tareeka) */
+      box.classList.add("is-video");
+      frame.src = "about:blank";
+      vid.poster = ev.poster || "";
+      vid.src = ev.video;
+      const pp = vid.play(); if(pp && pp.catch) pp.catch(()=>{});
+    }else{
+      box.classList.remove("is-video");
+      frame.src = src;
+    }
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden","false");
+    document.body.style.overflow = "hidden";
+    if(typeof PHMusic!=="undefined") PHMusic.duck(true);
+    document.getElementById("vmClose").focus();
+  }
+  function closeVideo(){
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden","true");
+    frame.src = "about:blank";   /* video band ho jaye */
+    vid.pause(); vid.removeAttribute("src"); vid.load();
+    document.body.style.overflow = "";
+    if(typeof PHMusic!=="undefined") PHMusic.duck(false);
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.getElementById("vmClose").addEventListener("click",closeVideo);
+  document.getElementById("vmBack").addEventListener("click",closeVideo);
+  addEventListener("keydown",e=>{ if(e.key==="Escape" && modal.classList.contains("open")) closeVideo(); });
+
+  EVENTS.forEach((ev,i)=>{
+    const has = !!embedUrl(ev.ig) || !!ev.video;
+    const card = document.createElement("article");
+    card.className = "ev reveal";
+    card.innerHTML =
+      '<button class="ev-thumb" type="button" aria-label="Video chalao">'+
+        '<span class="ev-no"></span>'+
+        '<svg class="ev-moon" viewBox="0 0 64 64"><use href="#s-crescent"/></svg>'+
+        '<span class="ev-play"><svg viewBox="0 0 24 24"><use href="#s-play"/></svg></span>'+
+      '</button>'+
+      '<div class="ev-body">'+
+        '<span class="ev-tag"></span><h3></h3><p></p>'+
+        '<div class="ev-actions">'+
+          '<button class="ev-btn" type="button"><svg viewBox="0 0 24 24"><use href="#s-play"/></svg>WATCH HERE</button>'+
+          '<a class="ev-ig" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><use href="#s-instagram"/></svg>INSTAGRAM</a>'+
+        '</div>'+
+      '</div>';
+    card.querySelector(".ev-no").textContent = String(i+1).padStart(2,"0");
+    card.querySelector(".ev-tag").textContent = ev.tag || "EVENT";
+    card.querySelector("h3").textContent = ev.title || "";
+    card.querySelector("p").textContent = ev.desc || "";
+    const igA = card.querySelector(".ev-ig"), watch = card.querySelector(".ev-btn"), thumb = card.querySelector(".ev-thumb");
+    if(ev.ig){ igA.href = ev.ig; } else { igA.style.display = "none"; }
+    if(has){
+      watch.addEventListener("click",()=>openVideo(ev));
+      thumb.addEventListener("click",()=>openVideo(ev));
+    }else{
+      watch.disabled = true; watch.lastChild.textContent = "JALD AA RAHI HAI";
+      thumb.disabled = true;
+    }
+    grid.appendChild(card);
+  });
+})();
+
+/* ===== Scroll reveal ===== */
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("show"); io.unobserve(e.target); } });
+},{threshold:.1});
+document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
+
+/* ===== Chaand-taara cursor (desktop only) ===== */
+(function(){
+  if(!matchMedia("(hover:hover) and (pointer:fine)").matches) return;
+  document.documentElement.classList.add("has-cursor");
+  const cur = document.getElementById("cur"), ring = document.getElementById("curRing");
+  const colors = ["#0b8a43","#e8c964","#c9a227","#17b058","#f3da82"];
+  let mx=-100,my=-100,rx=-100,ry=-100,last=0,shown=false;
+  function spawn(x,y){
+    const s = document.createElement("div");
+    s.className = "cspark";
+    const c = colors[Math.floor(Math.random()*colors.length)];
+    s.style.left = (x-3)+"px"; s.style.top = (y-3)+"px";
+    s.style.background = c; s.style.boxShadow = "0 0 8px 2px "+c;
+    s.style.setProperty("--dx",(Math.random()*40-20)+"px");
+    s.style.setProperty("--dy",(10+Math.random()*28)+"px");
+    document.body.appendChild(s);
+    setTimeout(()=>s.remove(),900);
+  }
+  addEventListener("mousemove",e=>{
+    mx = e.clientX; my = e.clientY;
+    if(!shown){ shown = true; rx = mx; ry = my; cur.style.opacity = 1; ring.style.opacity = 1; }
+    cur.style.transform = "translate("+mx+"px,"+my+"px)";
+    const now = performance.now();
+    if(now-last > 55){ last = now; spawn(mx,my); }
+  },{passive:true});
+  (function loop(){
+    rx += (mx-rx)*0.16; ry += (my-ry)*0.16;
+    ring.style.transform = "translate("+rx+"px,"+ry+"px)";
+    requestAnimationFrame(loop);
+  })();
+  document.addEventListener("mouseover",e=>{
+    const h = !!e.target.closest("a,button,summary,.btn");
+    cur.classList.toggle("hov",h); ring.classList.toggle("hov",h);
+  });
+  addEventListener("mousedown",()=>{cur.classList.add("down");ring.classList.add("down")});
+  addEventListener("mouseup",()=>{cur.classList.remove("down");ring.classList.remove("down")});
+  document.addEventListener("mouseleave",()=>{cur.style.opacity=0;ring.style.opacity=0;shown=false});
+})();
+
+/* ===== Slow lofi background music =====
+   Built-in lofi beat (synth): dheemi tempo, jazzy chords, soft drums, vinyl crackle.
+   Browser bina click ke awaaz nahi chalne deta, isliye music pehle click/tap par shuru hota hai.
+   Apna lofi gaana lagana ho to usay "audio/lofi.mp3" naam se rakh do, wo built-in beat ki jagah chalega. */
+const PHMusic = (function(){
+  const KEY = "ph_lofi_muted", FILE = "audio/lofi.mp3", VOL = 0.3;
+  const btn = document.getElementById("musicBtn"), tip = document.getElementById("musicTip");
+  let ctx=null, master=null, keysBus=null, send=null, noiseBuf=null, analyser=null, timer=null, audioEl=null;
+  let unlocked=false, muted=false, ducked=false, started=false, usingFile=false;
+  let step=0, nextT=0, lastMel=-9;
+  try{ muted = localStorage.getItem(KEY)==="1"; }catch(e){}
+
+  const BPM = 72, STEP = 60/BPM/2, SWING = 0.17;
+  const NOTE = {C:0,D:2,E:4,F:5,G:7,A:9,B:11};
+  function midi(n){ const m = n.match(/^([A-G])(b|#)?(\d)$/); return 12*(+m[3]+1)+NOTE[m[1]]+(m[2]==="#"?1:m[2]==="b"?-1:0); }
+  const hz = n => 440*Math.pow(2,(midi(n)-69)/12);
+  /* 8 bar loop: Fmaj9 - Em9 - Dm9 - Cmaj9 | Bbmaj9 - Am9 - Dm9 - G13 */
+  const CHORDS = [
+    ["F2",["A3","C4","E4","G4"]], ["E2",["G3","B3","D4","F#4"]], ["D2",["F3","A3","C4","E4"]], ["C2",["E3","G3","B3","D4"]],
+    ["Bb1",["D4","F4","A4","C5"]], ["A1",["C4","E4","G4","B4"]], ["D2",["F3","A3","C4","E4"]], ["G1",["F3","B3","E4","A4"]]
+  ];
+  const MEL = ["D5","E5","G5","A5","C5","E5"];
+
+  const fileCheck = (typeof fetch==="function")
+    ? fetch(FILE,{method:"HEAD"}).then(r=>r.ok && /audio|mpeg|ogg|octet-stream/i.test(r.headers.get("content-type")||"")).catch(()=>false)
+    : Promise.resolve(false);
+
+  function ui(){
+    const on = unlocked && started && !muted;
+    btn.classList.toggle("on",on);
+    btn.classList.toggle("off",!on);
+    btn.classList.toggle("hint",!unlocked && !muted);
+    btn.setAttribute("aria-pressed",String(on));
+    btn.setAttribute("aria-label",on ? "Mute lofi music" : "Play lofi music");
+  }
+  function hideTip(){ tip.classList.remove("show"); }
+
+  function ensureCtx(){
+    if(ctx) return;
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if(!AC) return;
+    ctx = new AC();
+    master = ctx.createGain(); master.gain.value = 0;
+    const tone = ctx.createBiquadFilter(); tone.type = "lowpass"; tone.frequency.value = 3600; tone.Q.value = 0.4;
+    const comp = ctx.createDynamicsCompressor(); comp.threshold.value = -20; comp.ratio.value = 3; comp.attack.value = 0.02; comp.release.value = 0.3;
+    analyser = ctx.createAnalyser(); analyser.fftSize = 1024;
+    master.connect(tone); tone.connect(comp); comp.connect(ctx.destination); comp.connect(analyser);
+
+    /* keys bus: tremolo (Rhodes jaisa) + warm lowpass */
+    const trem = ctx.createGain(); trem.gain.value = 0.85;
+    const lfo = ctx.createOscillator(), lfoG = ctx.createGain(); lfo.frequency.value = 4.2; lfoG.gain.value = 0.14; lfo.connect(lfoG); lfoG.connect(trem.gain); lfo.start();
+    keysBus = ctx.createGain();
+    const keysLP = ctx.createBiquadFilter(); keysLP.type = "lowpass"; keysLP.frequency.value = 1700;
+    keysBus.connect(trem); trem.connect(keysLP); keysLP.connect(master);
+
+    /* echo */
+    send = ctx.createGain(); send.gain.value = 0.3;
+    const dl = ctx.createDelay(2); dl.delayTime.value = STEP*3;
+    const fb = ctx.createGain(); fb.gain.value = 0.33;
+    const dlp = ctx.createBiquadFilter(); dlp.type = "lowpass"; dlp.frequency.value = 1300;
+    const wet = ctx.createGain(); wet.gain.value = 0.55;
+    send.connect(dl); dl.connect(dlp); dlp.connect(fb); fb.connect(dl); dlp.connect(wet); wet.connect(master);
+    keysLP.connect(send);
+
+    /* white noise + vinyl crackle */
+    noiseBuf = ctx.createBuffer(1,ctx.sampleRate,ctx.sampleRate);
+    const nd = noiseBuf.getChannelData(0); for(let i=0;i<nd.length;i++) nd[i] = Math.random()*2-1;
+    const cl = ctx.sampleRate*6, cb = ctx.createBuffer(1,cl,ctx.sampleRate), cd = cb.getChannelData(0);
+    for(let i=0;i<cl;i++){ cd[i] = (Math.random()*2-1)*0.012; if(Math.random()<0.00022) cd[i] += (Math.random()*2-1)*0.7; }
+    const cs = ctx.createBufferSource(); cs.buffer = cb; cs.loop = true;
+    const chp = ctx.createBiquadFilter(); chp.type = "highpass"; chp.frequency.value = 900;
+    const cg = ctx.createGain(); cg.gain.value = 0.22;
+    cs.connect(chp); chp.connect(cg); cg.connect(master); cs.start();
+  }
+
+  function key(f,t,dur,vel,sendAmt){
+    const o1 = ctx.createOscillator(), o2 = ctx.createOscillator(), g = ctx.createGain(), g2 = ctx.createGain();
+    o1.type = "sine"; o1.frequency.value = f; o1.detune.value = (Math.random()-.5)*10;
+    o2.type = "triangle"; o2.frequency.value = f*2.004; g2.gain.value = 0.16;
+    g.gain.setValueAtTime(0.0001,t);
+    g.gain.exponentialRampToValueAtTime(vel,t+0.018);
+    g.gain.exponentialRampToValueAtTime(vel*0.42,t+0.4);
+    g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
+    o1.connect(g); o2.connect(g2); g2.connect(g); g.connect(keysBus);
+    o1.start(t); o2.start(t); o1.stop(t+dur+0.1); o2.stop(t+dur+0.1);
+  }
+  function bass(f,t,dur,vel){
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = "sine"; o.frequency.value = f;
+    g.gain.setValueAtTime(0.0001,t); g.gain.exponentialRampToValueAtTime(vel,t+0.03); g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
+    o.connect(g); g.connect(master); o.start(t); o.stop(t+dur+0.05);
+  }
+  function kick(t,vel){
+    const o = ctx.createOscillator(), g = ctx.createGain();
+    o.type = "sine"; o.frequency.setValueAtTime(115,t); o.frequency.exponentialRampToValueAtTime(42,t+0.16);
+    g.gain.setValueAtTime(vel,t); g.gain.exponentialRampToValueAtTime(0.0001,t+0.3);
+    o.connect(g); g.connect(master); o.start(t); o.stop(t+0.32);
+  }
+  function noise(t,dur,vel,type,freq,q){
+    const src = ctx.createBufferSource(); src.buffer = noiseBuf;
+    const f = ctx.createBiquadFilter(); f.type = type; f.frequency.value = freq; f.Q.value = q||0.7;
+    const g = ctx.createGain(); g.gain.setValueAtTime(vel,t); g.gain.exponentialRampToValueAtTime(0.0001,t+dur);
+    src.connect(f); f.connect(g); g.connect(master); src.start(t,Math.random()*0.5); src.stop(t+dur+0.02);
+  }
+
+  function play(si,bar,t){
+    const ch = CHORDS[bar], notes = ch[1];
+    if(si===0){
+      notes.forEach((n,i)=>key(hz(n),t+i*0.028+Math.random()*0.012,3.1,0.075+Math.random()*0.01));
+      bass(hz(ch[0]),t,1.9,0.34);
+    }
+    if(si===3 && Math.random()<0.85){
+      notes.slice(1).forEach((n,i)=>key(hz(n),t+i*0.02,1.0,0.04));
+    }
+    if(si===4 && Math.random()<0.7) bass(hz(ch[0]),t,1.2,0.22);
+    if(si===0 || si===5) kick(t,si===0 ? 0.62 : 0.4);
+    if(si===2 || si===6) noise(t,0.16,0.16,"bandpass",1900,0.8);
+    if(Math.random()<0.9) noise(t,0.045,si%2 ? 0.025 : 0.04,"highpass",7000,0.6);
+    if((si===2 || si===4 || si===6 || si===7) && step-lastMel>3 && Math.random()<0.24){
+      lastMel = step;
+      key(hz(MEL[Math.floor(Math.random()*MEL.length)]),t,1.9,0.05);
+    }
+  }
+  function schedule(){
+    if(!ctx || ctx.state!=="running") return;
+    if(nextT < ctx.currentTime) nextT = ctx.currentTime + 0.05;
+    while(nextT < ctx.currentTime + 0.4){
+      const si = step%8, bar = Math.floor(step/8)%CHORDS.length;
+      play(si,bar,nextT + (si%2 ? SWING*STEP : 0));
+      nextT += STEP; step++;
+    }
+  }
+
+  function audible(){
+    const on = unlocked && started && !muted && !ducked;
+    if(master && ctx && !usingFile){
+      const t = ctx.currentTime;
+      master.gain.cancelScheduledValues(t);
+      master.gain.setValueAtTime(master.gain.value,t);
+      master.gain.linearRampToValueAtTime(on?VOL:0,t+(on?3.5:0.7));
+    }
+    if(usingFile && audioEl){
+      if(on){ audioEl.play().catch(()=>{}); } else { audioEl.pause(); }
+    }
+  }
+  function synthOn(){
+    ensureCtx(); if(!ctx) return;
+    usingFile = false;
+    if(!timer){ nextT = ctx.currentTime + 0.25; timer = setInterval(schedule,100); }
+    ctx.resume(); audible(); ui();
+  }
+  function startEngine(){
+    if(started) return;
+    started = true;
+    ensureCtx(); if(ctx) ctx.resume();     /* click ke andar hi resume (iOS/Safari ke liye) */
+    fileCheck.then(ok=>{
+      if(ok){
+        usingFile = true;
+        audioEl = new Audio(FILE); audioEl.loop = true; audioEl.volume = 0.28;
+        audioEl.addEventListener("error",synthOn);
+        if(ctx) ctx.suspend();
+        audible(); ui();
+      }else synthOn();
+    });
+    ui();
+  }
+
+  const EVENTS_ = ["pointerdown","touchend","keydown","click"];
+  function onGesture(e){
+    if(btn.contains(e.target)) return;
+    unlocked = true;
+    EVENTS_.forEach(ev=>removeEventListener(ev,onGesture,true));
+    hideTip();
+    if(!muted) startEngine();
+    ui();
+  }
+  EVENTS_.forEach(ev=>addEventListener(ev,onGesture,true));
+
+  btn.addEventListener("click",()=>{
+    if(!unlocked){
+      unlocked = true; muted = false;
+      EVENTS_.forEach(ev=>removeEventListener(ev,onGesture,true));
+      hideTip();
+      try{ localStorage.setItem(KEY,"0"); }catch(e){}
+      startEngine(); ui(); return;
+    }
+    muted = !muted;
+    try{ localStorage.setItem(KEY,muted?"1":"0"); }catch(e){}
+    if(!muted){ if(!started) startEngine(); else if(ctx && !usingFile) ctx.resume(); }
+    audible(); ui();
+  });
+
+  document.addEventListener("visibilitychange",()=>{
+    if(document.hidden){
+      if(ctx && ctx.state==="running" && !usingFile) ctx.suspend();
+      if(audioEl) audioEl.pause();
+    }else if(unlocked && started && !muted){
+      if(ctx && !usingFile) ctx.resume();
+      audible();
+    }
+  });
+
+  ui();
+  if(!muted){ setTimeout(()=>{ if(!unlocked) tip.classList.add("show"); },6500); setTimeout(hideTip,15000); }
+  return {
+    duck(v){ ducked = !!v; audible(); },      /* event video chalte waqt music dheema/band */
+    level(){ if(!analyser) return 0; const a = new Float32Array(analyser.fftSize); analyser.getFloatTimeDomainData(a); let m=0; for(const x of a) m=Math.max(m,Math.abs(x)); return m; }
+  };
+})();
+
+/* ===== 3D tilt on cards (desktop) ===== */
+(function(){
+  if(!matchMedia("(hover:hover) and (pointer:fine)").matches) return;
+  document.querySelectorAll(".card,.update,.more-box,.owner-card,.staff-card,.rule-card,.social-card").forEach(el=>{
+    el.addEventListener("pointermove",e=>{
+      const b = el.getBoundingClientRect();
+      const x = (e.clientX-b.left)/b.width, y = (e.clientY-b.top)/b.height;
+      const max = el.classList.contains("update") ? 5 : 8;
+      el.classList.add("tilting");
+      el.style.transform = "perspective(900px) rotateX("+((0.5-y)*max*2)+"deg) rotateY("+((x-0.5)*max*2)+"deg) translateY(-6px) scale(1.015)";
+    });
+    el.addEventListener("pointerleave",()=>{
+      el.classList.remove("tilting");
+      el.style.transform = "";
+    });
+  });
+})();
+</script>
+</body>
+</html>
